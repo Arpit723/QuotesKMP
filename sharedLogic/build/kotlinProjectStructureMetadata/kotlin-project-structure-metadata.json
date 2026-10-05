@@ -47,7 +47,8 @@
           "io.ktor:ktor-client-core",
           "io.ktor:ktor-client-content-negotiation",
           "io.ktor:ktor-serialization-kotlinx-json",
-          "io.insert-koin:koin-core"
+          "io.insert-koin:koin-core",
+          "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel"
         ],
         "sourceSetCInteropMetadataDirectory": "appleMain-cinterop",
         "binaryLayout": "klib",
@@ -64,7 +65,8 @@
           "io.ktor:ktor-client-core",
           "io.ktor:ktor-client-content-negotiation",
           "io.ktor:ktor-serialization-kotlinx-json",
-          "io.insert-koin:koin-core"
+          "io.insert-koin:koin-core",
+          "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel"
         ],
         "binaryLayout": "klib"
       },
@@ -81,6 +83,7 @@
           "io.ktor:ktor-client-content-negotiation",
           "io.ktor:ktor-serialization-kotlinx-json",
           "io.insert-koin:koin-core",
+          "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel",
           "io.ktor:ktor-client-darwin"
         ],
         "sourceSetCInteropMetadataDirectory": "iosMain-cinterop",
@@ -99,7 +102,8 @@
           "io.ktor:ktor-client-core",
           "io.ktor:ktor-client-content-negotiation",
           "io.ktor:ktor-serialization-kotlinx-json",
-          "io.insert-koin:koin-core"
+          "io.insert-koin:koin-core",
+          "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel"
         ],
         "sourceSetCInteropMetadataDirectory": "nativeMain-cinterop",
         "binaryLayout": "klib",

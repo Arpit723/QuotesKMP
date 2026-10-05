@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.bk.quoteskmp.androidApp-mergeDebugResources-39:/values-v30/values-v30.xml",
+            "outputFile": "com.bk.quoteskmp.androidApp-mergeDebugResources-46:/values-v30/values-v30.xml",
             "map": [
                 {
-                    "source": "/Users/arpitparekh/.gradle/caches/9.5.1/transforms/11794349072287453d0f084c44890b25/transformed/material3/res/values-v30/values-v30.xml",
+                    "source": "/Users/arpitparekh/.gradle/caches/9.5.1/transforms/e97d9a12283109c5973a0488268b7d2e/transformed/material3/res/values-v30/values-v30.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

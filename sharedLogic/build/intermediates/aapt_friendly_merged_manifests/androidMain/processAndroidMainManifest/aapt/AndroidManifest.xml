@@ -2,6 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.bk.quoteskmp.sharedLogic" >
 
-    <uses-sdk android:minSdkVersion="37" />
+    <uses-sdk android:minSdkVersion="24" />
 
 </manifest>
