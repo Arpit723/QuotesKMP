@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.demo.quotes.data.QuoteRepositoryImplTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-05T12:24:58.052Z" hostname="Arpits-Mac-mini.local" time="0.214">
+<testsuite name="com.demo.quotes.data.QuoteRepositoryImplTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-05T12:31:28.598Z" hostname="Arpits-Mac-mini.local" time="0.228">
   <properties/>
-  <testcase name="failureThrows" classname="com.demo.quotes.data.QuoteRepositoryImplTest" time="0.199"/>
-  <testcase name="successReturnsQuote" classname="com.demo.quotes.data.QuoteRepositoryImplTest" time="0.015"/>
+  <testcase name="failureThrows" classname="com.demo.quotes.data.QuoteRepositoryImplTest" time="0.206"/>
+  <testcase name="successReturnsQuote" classname="com.demo.quotes.data.QuoteRepositoryImplTest" time="0.022"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation

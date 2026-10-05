@@ -1,1 +1,3 @@
-int string androidx_startup 0x7f010000
+int id view_tree_disjoint_parent 0x7f010000
+int id view_tree_view_model_store_owner 0x7f010001
+int string androidx_startup 0x7f020000

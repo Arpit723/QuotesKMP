@@ -1,2 +1,2 @@
 
-<QuotesKMP:sharedLogic>:com.bk.quoteskmp:com.demo.quotes.data:com.demo.quotes.data.remote:com.demo.quotes.di:com.demo.quotes.domain
+<QuotesKMP:sharedLogic>:com.bk.quoteskmp:com.demo.quotes.data:com.demo.quotes.data.remote:com.demo.quotes.di:com.demo.quotes.domain:com.demo.quotes.presentation
