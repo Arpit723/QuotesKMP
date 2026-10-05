@@ -1,0 +1,3 @@
+com.bk.quoteskmp.sharedLogic.test.sharedLogic-mergeAndroidHostTestResources-0 /Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/intermediates/incremental/androidHostTest/mergeAndroidHostTestResources/merged.dir
+com.bk.quoteskmp.sharedLogic.test.sharedLogic-mergeAndroidHostTestResources-1 /Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/intermediates/incremental/androidHostTest/mergeAndroidHostTestResources/stripped.dir
+com.bk.quoteskmp.sharedLogic.test.sharedLogic-androidHostTest-2 /Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/intermediates/merged_res/androidHostTest/mergeAndroidHostTestResources

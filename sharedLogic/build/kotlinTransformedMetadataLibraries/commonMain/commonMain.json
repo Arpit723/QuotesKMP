@@ -1,0 +1,392 @@
+[
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "org.jetbrains.kotlin",
+        "name": "kotlin-stdlib"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "org.jetbrains.kotlin",
+        "name": "kotlin-stdlib"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.kotlin-kotlin-stdlib-2.4.20-commonMain-MgaIfA.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "org.jetbrains.kotlinx",
+        "name": "kotlinx-coroutines-core"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "org.jetbrains.kotlinx",
+        "name": "kotlinx-coroutines-core"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.kotlinx-kotlinx-coroutines-core-1.11.0-concurrentMain-BviMwQ.klib",
+    "sourceSetName": "concurrentMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "org.jetbrains.kotlinx",
+        "name": "kotlinx-coroutines-core"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "org.jetbrains.kotlinx",
+        "name": "kotlinx-coroutines-core"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.kotlinx-kotlinx-coroutines-core-1.11.0-commonMain-BviMwQ.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "org.jetbrains.kotlinx",
+        "name": "kotlinx-serialization-json"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "org.jetbrains.kotlinx",
+        "name": "kotlinx-serialization-json"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.kotlinx-kotlinx-serialization-json-1.11.0-commonMain-1M5Mww.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "org.jetbrains.kotlinx",
+        "name": "kotlinx-datetime"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "org.jetbrains.kotlinx",
+        "name": "kotlinx-datetime"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.kotlinx-kotlinx-datetime-0.8.0-0.6.x-compat-commonMain-QBNW2g.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "io.ktor",
+        "name": "ktor-client-core"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "io.ktor",
+        "name": "ktor-client-core"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/commonMain/io.ktor-ktor-client-core-3.6.0-jvmAndPosixMain-0ifOOg.klib",
+    "sourceSetName": "jvmAndPosixMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "io.ktor",
+        "name": "ktor-client-core"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "io.ktor",
+        "name": "ktor-client-core"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/commonMain/io.ktor-ktor-client-core-3.6.0-commonMain-0ifOOg.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "io.ktor",
+        "name": "ktor-client-content-negotiation"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "io.ktor",
+        "name": "ktor-client-content-negotiation"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/commonMain/io.ktor-ktor-client-content-negotiation-3.6.0-commonMain-euNnlQ.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "io.ktor",
+        "name": "ktor-serialization-kotlinx-json"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "io.ktor",
+        "name": "ktor-serialization-kotlinx-json"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/commonMain/io.ktor-ktor-serialization-kotlinx-json-3.6.0-commonMain-TyAjGQ.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "org.jetbrains.kotlinx",
+        "name": "kotlinx-serialization-core"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "org.jetbrains.kotlinx",
+        "name": "kotlinx-serialization-core"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.kotlinx-kotlinx-serialization-core-1.11.0-commonMain-POu6Pw.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "io.ktor",
+        "name": "ktor-http"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "io.ktor",
+        "name": "ktor-http"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/commonMain/io.ktor-ktor-http-3.6.0-commonMain-SJ5Lsw.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "io.ktor",
+        "name": "ktor-http-cio"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "io.ktor",
+        "name": "ktor-http-cio"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/commonMain/io.ktor-ktor-http-cio-3.6.0-jvmAndPosixMain-OBhW_w.klib",
+    "sourceSetName": "jvmAndPosixMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "io.ktor",
+        "name": "ktor-http-cio"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "io.ktor",
+        "name": "ktor-http-cio"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/commonMain/io.ktor-ktor-http-cio-3.6.0-commonMain-OBhW_w.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "io.ktor",
+        "name": "ktor-events"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "io.ktor",
+        "name": "ktor-events"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/commonMain/io.ktor-ktor-events-3.6.0-commonMain-uuFDaw.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "io.ktor",
+        "name": "ktor-websocket-serialization"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "io.ktor",
+        "name": "ktor-websocket-serialization"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/commonMain/io.ktor-ktor-websocket-serialization-3.6.0-commonMain-iH8_IQ.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "io.ktor",
+        "name": "ktor-sse"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "io.ktor",
+        "name": "ktor-sse"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/commonMain/io.ktor-ktor-sse-3.6.0-commonMain-F-gmyQ.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "io.ktor",
+        "name": "ktor-serialization"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "io.ktor",
+        "name": "ktor-serialization"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/commonMain/io.ktor-ktor-serialization-3.6.0-commonMain-wM1nNg.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "io.ktor",
+        "name": "ktor-serialization-kotlinx"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "io.ktor",
+        "name": "ktor-serialization-kotlinx"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/commonMain/io.ktor-ktor-serialization-kotlinx-3.6.0-commonMain-IHB1Fg.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "org.jetbrains.kotlinx",
+        "name": "kotlinx-serialization-json-io"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "org.jetbrains.kotlinx",
+        "name": "kotlinx-serialization-json-io"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.kotlinx-kotlinx-serialization-json-io-1.11.0-commonMain-LT4sUA.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "io.ktor",
+        "name": "ktor-utils"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "io.ktor",
+        "name": "ktor-utils"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/commonMain/io.ktor-ktor-utils-3.6.0-commonMain-spT_hw.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "io.ktor",
+        "name": "ktor-io"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "io.ktor",
+        "name": "ktor-io"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/commonMain/io.ktor-ktor-io-3.6.0-jvmAndPosixMain-JJtjyg.klib",
+    "sourceSetName": "jvmAndPosixMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "io.ktor",
+        "name": "ktor-io"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "io.ktor",
+        "name": "ktor-io"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/commonMain/io.ktor-ktor-io-3.6.0-commonMain-JJtjyg.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "io.ktor",
+        "name": "ktor-websockets"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "io.ktor",
+        "name": "ktor-websockets"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/commonMain/io.ktor-ktor-websockets-3.6.0-commonMain-sxoKrw.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "io.ktor",
+        "name": "ktor-openapi-schema"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "io.ktor",
+        "name": "ktor-openapi-schema"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/commonMain/io.ktor-ktor-openapi-schema-3.6.0-commonMain--TRO_A.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "org.jetbrains.kotlinx",
+        "name": "kotlinx-io-core"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "org.jetbrains.kotlinx",
+        "name": "kotlinx-io-core"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.kotlinx-kotlinx-io-core-0.9.1-commonMain-LSdToQ.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "org.jetbrains.kotlinx",
+        "name": "kotlinx-io-bytestring"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "org.jetbrains.kotlinx",
+        "name": "kotlinx-io-bytestring"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.kotlinx-kotlinx-io-bytestring-0.9.1-commonMain-ypuSdQ.klib",
+    "sourceSetName": "commonMain"
+  }
+]

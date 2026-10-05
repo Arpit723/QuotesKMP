@@ -1,0 +1,7 @@
+com.bk.quoteskmp.androidApp-pngs-0 /Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/androidApp/build/generated/res/pngs/debug
+com.bk.quoteskmp.androidApp-updated_navigation_xml-1 /Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/androidApp/build/generated/updated_navigation_xml/debug
+com.bk.quoteskmp.androidApp-packageDebugResources-2 /Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/androidApp/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.bk.quoteskmp.androidApp-packageDebugResources-3 /Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/androidApp/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.bk.quoteskmp.androidApp-debug-4 /Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/androidApp/build/intermediates/merged_res/debug/mergeDebugResources
+com.bk.quoteskmp.androidApp-debug-5 /Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/androidApp/src/debug/res
+com.bk.quoteskmp.androidApp-main-6 /Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/androidApp/src/main/res

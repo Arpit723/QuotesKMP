@@ -1,0 +1,4 @@
+com.bk.quoteskmp.sharedUI-androidMain-0 /Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedUI/build/generated/updated_navigation_xml/androidMain/res
+com.bk.quoteskmp.sharedUI-packageAndroidMainResources-1 /Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedUI/build/intermediates/incremental/androidMain/packageAndroidMainResources/merged.dir
+com.bk.quoteskmp.sharedUI-packageAndroidMainResources-2 /Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedUI/build/intermediates/incremental/androidMain/packageAndroidMainResources/stripped.dir
+com.bk.quoteskmp.sharedUI-packageAndroidMainResources-3 /Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedUI/build/intermediates/packaged_res/androidMain/packageAndroidMainResources/res
