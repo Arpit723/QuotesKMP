@@ -137,6 +137,21 @@
   {
     "moduleId": {
       "groupAndName": {
+        "group": "io.insert-koin",
+        "name": "koin-core"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "io.insert-koin",
+        "name": "koin-core"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/commonMain/io.insert-koin-koin-core-4.2.2-commonMain-WiI1KA.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
         "group": "org.jetbrains.kotlinx",
         "name": "kotlinx-serialization-core"
       },

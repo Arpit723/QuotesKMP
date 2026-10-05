@@ -167,6 +167,21 @@
   {
     "moduleId": {
       "groupAndName": {
+        "group": "io.insert-koin",
+        "name": "koin-core"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "io.insert-koin",
+        "name": "koin-core"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/nativeMain/io.insert-koin-koin-core-4.2.2-nativeMain-WiI1KA.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
         "group": "org.jetbrains.kotlinx",
         "name": "atomicfu"
       },
@@ -253,6 +268,66 @@
     },
     "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/nativeMain/io.ktor-ktor-serialization-kotlinx-3.6.0-posixMain-IHB1Fg.klib",
     "sourceSetName": "posixMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "co.touchlab",
+        "name": "stately-concurrency"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "co.touchlab",
+        "name": "stately-concurrency"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/nativeMain/co.touchlab-stately-concurrency-2.1.0-appleMain-oa7GPg.klib",
+    "sourceSetName": "appleMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "co.touchlab",
+        "name": "stately-concurrency"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "co.touchlab",
+        "name": "stately-concurrency"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/nativeMain/co.touchlab-stately-concurrency-2.1.0-nativeMain-t1ZQYw.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "co.touchlab",
+        "name": "stately-concurrency"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "co.touchlab",
+        "name": "stately-concurrency"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/nativeMain/co.touchlab-stately-concurrency-2.1.0-commonMain-t1ZQYw.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "co.touchlab",
+        "name": "stately-concurrent-collections"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "co.touchlab",
+        "name": "stately-concurrent-collections"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/nativeMain/co.touchlab-stately-concurrent-collections-2.1.0-commonMain-jSCQOA.klib",
+    "sourceSetName": "commonMain"
   },
   {
     "moduleId": {
@@ -418,6 +493,36 @@
     },
     "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.kotlinx-kotlinx-io-core-0.9.1-nativeMain-LSdToQ.klib",
     "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "co.touchlab",
+        "name": "stately-strict"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "co.touchlab",
+        "name": "stately-strict"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/nativeMain/co.touchlab-stately-strict-2.1.0-nativeMain-dKdBGA.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": {
+      "groupAndName": {
+        "group": "co.touchlab",
+        "name": "stately-strict"
+      },
+      "componentId": {
+        "type": "module",
+        "group": "co.touchlab",
+        "name": "stately-strict"
+      }
+    },
+    "file": "/Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/kotlinTransformedMetadataLibraries/nativeMain/co.touchlab-stately-strict-2.1.0-commonMain-dKdBGA.klib",
+    "sourceSetName": "commonMain"
   },
   {
     "moduleId": {

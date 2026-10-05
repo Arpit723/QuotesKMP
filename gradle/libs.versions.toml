@@ -13,6 +13,7 @@ composeMultiplatform = "1.12.1"
 coroutines = "1.11.0"
 datetime = "0.8.0"
 junit = "4.13.2"
+koin = "4.2.2"
 kotlin = "2.4.20"
 ktor = "3.6.0"
 material3 = "1.12.0-alpha03"
@@ -46,6 +47,7 @@ ktor-serialization-kotlinxJson = { module = "io.ktor:ktor-serialization-kotlinx-
 ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
 ktor-client-darwin = { module = "io.ktor:ktor-client-darwin", version.ref = "ktor" }
 ktor-client-mock = { module = "io.ktor:ktor-client-mock", version.ref = "ktor" }
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

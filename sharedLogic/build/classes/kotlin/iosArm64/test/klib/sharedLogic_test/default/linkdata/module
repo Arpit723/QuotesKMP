@@ -1,2 +1,2 @@
 
-<QuotesKMP:sharedLogic_test>:com.bk.quoteskmp
+<QuotesKMP:sharedLogic_test>:com.bk.quoteskmp:com.demo.quotes.data:com.demo.quotes.data.remote

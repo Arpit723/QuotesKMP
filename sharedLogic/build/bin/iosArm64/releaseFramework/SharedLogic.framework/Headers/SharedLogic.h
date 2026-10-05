@@ -6,9 +6,9 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class SharedLogicKotlinAbstractCoroutineContextElement, SharedLogicKotlinAbstractCoroutineContextKey<B, E>, SharedLogicKotlinArray<T>, SharedLogicKotlinByteArray, SharedLogicKotlinByteIterator, SharedLogicKotlinCancellationException, SharedLogicKotlinEnum<E>, SharedLogicKotlinEnumCompanion, SharedLogicKotlinException, SharedLogicKotlinIllegalStateException, SharedLogicKotlinKTypeProjection, SharedLogicKotlinKTypeProjectionCompanion, SharedLogicKotlinKVariance, SharedLogicKotlinNothing, SharedLogicKotlinRuntimeException, SharedLogicKotlinThrowable, SharedLogicKotlinUnit, SharedLogicKotlinx_coroutines_coreCoroutineDispatcher, SharedLogicKotlinx_coroutines_coreCoroutineDispatcherKey, SharedLogicKotlinx_io_coreBuffer, SharedLogicKotlinx_serialization_coreSerialKind, SharedLogicKotlinx_serialization_coreSerializersModule, SharedLogicKtor_client_coreHttpClient, SharedLogicKtor_client_coreHttpClientCall, SharedLogicKtor_client_coreHttpClientCallCompanion, SharedLogicKtor_client_coreHttpClientConfig<T>, SharedLogicKtor_client_coreHttpClientEngineConfig, SharedLogicKtor_client_coreHttpReceivePipeline, SharedLogicKtor_client_coreHttpReceivePipelinePhases, SharedLogicKtor_client_coreHttpRequestBuilder, SharedLogicKtor_client_coreHttpRequestBuilderCompanion, SharedLogicKtor_client_coreHttpRequestData, SharedLogicKtor_client_coreHttpRequestPipeline, SharedLogicKtor_client_coreHttpRequestPipelinePhases, SharedLogicKtor_client_coreHttpResponse, SharedLogicKtor_client_coreHttpResponseContainer, SharedLogicKtor_client_coreHttpResponseData, SharedLogicKtor_client_coreHttpResponsePipeline, SharedLogicKtor_client_coreHttpResponsePipelinePhases, SharedLogicKtor_client_coreHttpSendPipeline, SharedLogicKtor_client_coreHttpSendPipelinePhases, SharedLogicKtor_client_coreProxyConfig, SharedLogicKtor_eventsEventDefinition<T>, SharedLogicKtor_eventsEvents, SharedLogicKtor_httpContentType, SharedLogicKtor_httpContentTypeCompanion, SharedLogicKtor_httpHeaderValueParam, SharedLogicKtor_httpHeaderValueWithParameters, SharedLogicKtor_httpHeaderValueWithParametersCompanion, SharedLogicKtor_httpHeadersBuilder, SharedLogicKtor_httpHttpMethod, SharedLogicKtor_httpHttpMethodCompanion, SharedLogicKtor_httpHttpProtocolVersion, SharedLogicKtor_httpHttpProtocolVersionCompanion, SharedLogicKtor_httpHttpStatusCode, SharedLogicKtor_httpHttpStatusCodeCompanion, SharedLogicKtor_httpOutgoingContent, SharedLogicKtor_httpURLBuilder, SharedLogicKtor_httpURLBuilderCompanion, SharedLogicKtor_httpURLProtocol, SharedLogicKtor_httpURLProtocolCompanion, SharedLogicKtor_httpUrl, SharedLogicKtor_httpUrlCompanion, SharedLogicKtor_utilsAttributeKey<T>, SharedLogicKtor_utilsGMTDate, SharedLogicKtor_utilsGMTDateCompanion, SharedLogicKtor_utilsMonth, SharedLogicKtor_utilsMonthCompanion, SharedLogicKtor_utilsPipeline<TSubject, TContext>, SharedLogicKtor_utilsPipelinePhase, SharedLogicKtor_utilsStringValuesBuilderImpl, SharedLogicKtor_utilsTypeInfo, SharedLogicKtor_utilsWeekDay, SharedLogicKtor_utilsWeekDayCompanion, SharedLogicQuote, SharedLogicQuoteDto, SharedLogicQuoteDtoCompanion;
+@class SharedLogicKoin_coreBeanDefinition<T>, SharedLogicKoin_coreCallbacks<T>, SharedLogicKoin_coreExtensionManager, SharedLogicKoin_coreInstanceFactory<T>, SharedLogicKoin_coreInstanceFactoryCompanion, SharedLogicKoin_coreInstanceRegistry, SharedLogicKoin_coreKind, SharedLogicKoin_coreKoin, SharedLogicKoin_coreKoinDefinition<R>, SharedLogicKoin_coreLevel, SharedLogicKoin_coreLockable, SharedLogicKoin_coreLogger, SharedLogicKoin_coreModule, SharedLogicKoin_coreOptionRegistry, SharedLogicKoin_coreParametersHolder, SharedLogicKoin_corePropertyRegistry, SharedLogicKoin_coreResolutionContext, SharedLogicKoin_coreScope, SharedLogicKoin_coreScopeDSL, SharedLogicKoin_coreScopeRegistry, SharedLogicKoin_coreScopeRegistryCompanion, SharedLogicKoin_coreSingleInstanceFactory<T>, SharedLogicKoin_coreTypeQualifier, SharedLogicKotlinAbstractCoroutineContextElement, SharedLogicKotlinAbstractCoroutineContextKey<B, E>, SharedLogicKotlinArray<T>, SharedLogicKotlinByteArray, SharedLogicKotlinByteIterator, SharedLogicKotlinCancellationException, SharedLogicKotlinEnum<E>, SharedLogicKotlinEnumCompanion, SharedLogicKotlinException, SharedLogicKotlinIllegalStateException, SharedLogicKotlinKTypeProjection, SharedLogicKotlinKTypeProjectionCompanion, SharedLogicKotlinKVariance, SharedLogicKotlinLazyThreadSafetyMode, SharedLogicKotlinNothing, SharedLogicKotlinRuntimeException, SharedLogicKotlinThrowable, SharedLogicKotlinUnit, SharedLogicKotlinx_coroutines_coreCoroutineDispatcher, SharedLogicKotlinx_coroutines_coreCoroutineDispatcherKey, SharedLogicKotlinx_io_coreBuffer, SharedLogicKotlinx_serialization_coreSerialKind, SharedLogicKotlinx_serialization_coreSerializersModule, SharedLogicKtor_client_coreHttpClient, SharedLogicKtor_client_coreHttpClientCall, SharedLogicKtor_client_coreHttpClientCallCompanion, SharedLogicKtor_client_coreHttpClientConfig<T>, SharedLogicKtor_client_coreHttpClientEngineConfig, SharedLogicKtor_client_coreHttpReceivePipeline, SharedLogicKtor_client_coreHttpReceivePipelinePhases, SharedLogicKtor_client_coreHttpRequestBuilder, SharedLogicKtor_client_coreHttpRequestBuilderCompanion, SharedLogicKtor_client_coreHttpRequestData, SharedLogicKtor_client_coreHttpRequestPipeline, SharedLogicKtor_client_coreHttpRequestPipelinePhases, SharedLogicKtor_client_coreHttpResponse, SharedLogicKtor_client_coreHttpResponseContainer, SharedLogicKtor_client_coreHttpResponseData, SharedLogicKtor_client_coreHttpResponsePipeline, SharedLogicKtor_client_coreHttpResponsePipelinePhases, SharedLogicKtor_client_coreHttpSendPipeline, SharedLogicKtor_client_coreHttpSendPipelinePhases, SharedLogicKtor_client_coreProxyConfig, SharedLogicKtor_eventsEventDefinition<T>, SharedLogicKtor_eventsEvents, SharedLogicKtor_httpContentType, SharedLogicKtor_httpContentTypeCompanion, SharedLogicKtor_httpHeaderValueParam, SharedLogicKtor_httpHeaderValueWithParameters, SharedLogicKtor_httpHeaderValueWithParametersCompanion, SharedLogicKtor_httpHeadersBuilder, SharedLogicKtor_httpHttpMethod, SharedLogicKtor_httpHttpMethodCompanion, SharedLogicKtor_httpHttpProtocolVersion, SharedLogicKtor_httpHttpProtocolVersionCompanion, SharedLogicKtor_httpHttpStatusCode, SharedLogicKtor_httpHttpStatusCodeCompanion, SharedLogicKtor_httpOutgoingContent, SharedLogicKtor_httpURLBuilder, SharedLogicKtor_httpURLBuilderCompanion, SharedLogicKtor_httpURLProtocol, SharedLogicKtor_httpURLProtocolCompanion, SharedLogicKtor_httpUrl, SharedLogicKtor_httpUrlCompanion, SharedLogicKtor_utilsAttributeKey<T>, SharedLogicKtor_utilsGMTDate, SharedLogicKtor_utilsGMTDateCompanion, SharedLogicKtor_utilsMonth, SharedLogicKtor_utilsMonthCompanion, SharedLogicKtor_utilsPipeline<TSubject, TContext>, SharedLogicKtor_utilsPipelinePhase, SharedLogicKtor_utilsStringValuesBuilderImpl, SharedLogicKtor_utilsTypeInfo, SharedLogicKtor_utilsWeekDay, SharedLogicKtor_utilsWeekDayCompanion, SharedLogicQuote, SharedLogicQuoteApi, SharedLogicQuoteDto, SharedLogicQuoteDtoCompanion;
 
-@protocol SharedLogicKotlinAnnotation, SharedLogicKotlinAutoCloseable, SharedLogicKotlinComparable, SharedLogicKotlinContinuation, SharedLogicKotlinContinuationInterceptor, SharedLogicKotlinCoroutineContext, SharedLogicKotlinCoroutineContextElement, SharedLogicKotlinCoroutineContextKey, SharedLogicKotlinFunction, SharedLogicKotlinIterator, SharedLogicKotlinKAnnotatedElement, SharedLogicKotlinKClass, SharedLogicKotlinKClassifier, SharedLogicKotlinKDeclarationContainer, SharedLogicKotlinKType, SharedLogicKotlinMapEntry, SharedLogicKotlinSequence, SharedLogicKotlinSuspendFunction2, SharedLogicKotlinx_coroutines_coreChildHandle, SharedLogicKotlinx_coroutines_coreChildJob, SharedLogicKotlinx_coroutines_coreCoroutineScope, SharedLogicKotlinx_coroutines_coreDisposableHandle, SharedLogicKotlinx_coroutines_coreFlow, SharedLogicKotlinx_coroutines_coreFlowCollector, SharedLogicKotlinx_coroutines_coreJob, SharedLogicKotlinx_coroutines_coreParentJob, SharedLogicKotlinx_coroutines_coreRunnable, SharedLogicKotlinx_coroutines_coreSelectClause, SharedLogicKotlinx_coroutines_coreSelectClause0, SharedLogicKotlinx_coroutines_coreSelectInstance, SharedLogicKotlinx_io_coreRawSink, SharedLogicKotlinx_io_coreRawSource, SharedLogicKotlinx_io_coreSink, SharedLogicKotlinx_io_coreSource, SharedLogicKotlinx_serialization_coreCompositeDecoder, SharedLogicKotlinx_serialization_coreCompositeEncoder, SharedLogicKotlinx_serialization_coreDecoder, SharedLogicKotlinx_serialization_coreDeserializationStrategy, SharedLogicKotlinx_serialization_coreEncoder, SharedLogicKotlinx_serialization_coreKSerializer, SharedLogicKotlinx_serialization_coreSerialDescriptor, SharedLogicKotlinx_serialization_coreSerializationStrategy, SharedLogicKotlinx_serialization_coreSerializersModuleCollector, SharedLogicKtor_client_coreHttpClientEngine, SharedLogicKtor_client_coreHttpClientEngineCapability, SharedLogicKtor_client_coreHttpClientPlugin, SharedLogicKtor_client_coreHttpRequest, SharedLogicKtor_httpHeaders, SharedLogicKtor_httpHttpMessage, SharedLogicKtor_httpHttpMessageBuilder, SharedLogicKtor_httpParameters, SharedLogicKtor_httpParametersBuilder, SharedLogicKtor_ioByteReadChannel, SharedLogicKtor_ioCloseable, SharedLogicKtor_ioJvmSerializable, SharedLogicKtor_utilsAttributes, SharedLogicKtor_utilsStringValues, SharedLogicKtor_utilsStringValuesBuilder, SharedLogicPlatform;
+@protocol SharedLogicKoin_coreKoinComponent, SharedLogicKoin_coreKoinExtension, SharedLogicKoin_coreKoinScopeComponent, SharedLogicKoin_coreQualifier, SharedLogicKoin_coreResolutionExtension, SharedLogicKoin_coreScopeCallback, SharedLogicKotlinAnnotation, SharedLogicKotlinAutoCloseable, SharedLogicKotlinComparable, SharedLogicKotlinContinuation, SharedLogicKotlinContinuationInterceptor, SharedLogicKotlinCoroutineContext, SharedLogicKotlinCoroutineContextElement, SharedLogicKotlinCoroutineContextKey, SharedLogicKotlinFunction, SharedLogicKotlinIterator, SharedLogicKotlinKAnnotatedElement, SharedLogicKotlinKClass, SharedLogicKotlinKClassifier, SharedLogicKotlinKDeclarationContainer, SharedLogicKotlinKType, SharedLogicKotlinLazy, SharedLogicKotlinMapEntry, SharedLogicKotlinSequence, SharedLogicKotlinSuspendFunction2, SharedLogicKotlinx_coroutines_coreChildHandle, SharedLogicKotlinx_coroutines_coreChildJob, SharedLogicKotlinx_coroutines_coreCoroutineScope, SharedLogicKotlinx_coroutines_coreDisposableHandle, SharedLogicKotlinx_coroutines_coreJob, SharedLogicKotlinx_coroutines_coreParentJob, SharedLogicKotlinx_coroutines_coreRunnable, SharedLogicKotlinx_coroutines_coreSelectClause, SharedLogicKotlinx_coroutines_coreSelectClause0, SharedLogicKotlinx_coroutines_coreSelectInstance, SharedLogicKotlinx_io_coreRawSink, SharedLogicKotlinx_io_coreRawSource, SharedLogicKotlinx_io_coreSink, SharedLogicKotlinx_io_coreSource, SharedLogicKotlinx_serialization_coreCompositeDecoder, SharedLogicKotlinx_serialization_coreCompositeEncoder, SharedLogicKotlinx_serialization_coreDecoder, SharedLogicKotlinx_serialization_coreDeserializationStrategy, SharedLogicKotlinx_serialization_coreEncoder, SharedLogicKotlinx_serialization_coreKSerializer, SharedLogicKotlinx_serialization_coreSerialDescriptor, SharedLogicKotlinx_serialization_coreSerializationStrategy, SharedLogicKotlinx_serialization_coreSerializersModuleCollector, SharedLogicKtor_client_coreHttpClientEngine, SharedLogicKtor_client_coreHttpClientEngineCapability, SharedLogicKtor_client_coreHttpClientPlugin, SharedLogicKtor_client_coreHttpRequest, SharedLogicKtor_httpHeaders, SharedLogicKtor_httpHttpMessage, SharedLogicKtor_httpHttpMessageBuilder, SharedLogicKtor_httpParameters, SharedLogicKtor_httpParametersBuilder, SharedLogicKtor_ioByteReadChannel, SharedLogicKtor_ioCloseable, SharedLogicKtor_ioJvmSerializable, SharedLogicKtor_utilsAttributes, SharedLogicKtor_utilsStringValues, SharedLogicKtor_utilsStringValuesBuilder, SharedLogicPlatform, SharedLogicQuoteRepository;
 
 NS_ASSUME_NONNULL_BEGIN
 #pragma clang diagnostic push
@@ -166,6 +166,30 @@ __attribute__((swift_name("IOSPlatform")))
 @property (readonly) NSString *name __attribute__((swift_name("name")));
 @end
 
+__attribute__((swift_name("QuoteRepository")))
+@protocol SharedLogicQuoteRepository
+@required
+
+/** Fetches a random quote from the remote source.
+ *
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)fetchRandomQuoteWithCompletionHandler:(void (^)(SharedLogicQuote * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("fetchRandomQuote(completionHandler:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("QuoteRepositoryImpl")))
+@interface SharedLogicQuoteRepositoryImpl : SharedLogicBase <SharedLogicQuoteRepository>
+- (instancetype)initWithApi:(SharedLogicQuoteApi *)api __attribute__((swift_name("init(api:)"))) __attribute__((objc_designated_initializer));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)fetchRandomQuoteWithCompletionHandler:(void (^)(SharedLogicQuote * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("fetchRandomQuote(completionHandler:)")));
+@end
+
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("QuoteApi")))
 @interface SharedLogicQuoteApi : SharedLogicBase
@@ -220,45 +244,6 @@ __attribute__((swift_name("Quote")))
 @property (readonly) NSString *text __attribute__((swift_name("text")));
 @end
 
-__attribute__((swift_name("QuoteRepository")))
-@protocol SharedLogicQuoteRepository
-@required
-
-/** Removes the saved quote with [id].
- *
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)deleteId:(int64_t)id completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("delete(id:completionHandler:)")));
-
-/** Fetches a random quote from the remote source.
- *
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)fetchRandomQuoteWithCompletionHandler:(void (^)(SharedLogicQuote * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("fetchRandomQuote(completionHandler:)")));
-
-/** Emits whether the quote with [id] is currently saved. */
-- (id<SharedLogicKotlinx_coroutines_coreFlow>)observeIsSavedId:(int64_t)id __attribute__((swift_name("observeIsSaved(id:)")));
-
-/** Emits the current list of saved quotes on every change. */
-- (id<SharedLogicKotlinx_coroutines_coreFlow>)observeSaved __attribute__((swift_name("observeSaved()")));
-
-/** Returns a random locally saved quote, or null if none are saved.
- *
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)randomSavedQuoteWithCompletionHandler:(void (^)(SharedLogicQuote * _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("randomSavedQuote(completionHandler:)")));
-
-/** Persists [quote] locally.
- *
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)saveQuote:(SharedLogicQuote *)quote completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("save(quote:completionHandler:)")));
-@end
-
 @interface SharedLogicQuoteDto (Extensions)
 - (SharedLogicQuote *)toQuote __attribute__((swift_name("toQuote()")));
 @end
@@ -267,6 +252,12 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("GreetingUtilKt")))
 @interface SharedLogicGreetingUtilKt : SharedLogicBase
 + (NSString *)sayHelloTo:(NSString *)to __attribute__((swift_name("sayHello(to:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("HttpClientEngine_iosKt")))
+@interface SharedLogicHttpClientEngine_iosKt : SharedLogicBase
++ (id<SharedLogicKtor_client_coreHttpClientEngine>)createHttpClientEngine __attribute__((swift_name("createHttpClientEngine()")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -279,6 +270,74 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("QuoteApiKt")))
 @interface SharedLogicQuoteApiKt : SharedLogicBase
 + (SharedLogicKtor_client_coreHttpClient *)createHttpClientEngine:(id<SharedLogicKtor_client_coreHttpClientEngine>)engine __attribute__((swift_name("createHttpClient(engine:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("QuotesModuleKt")))
+@interface SharedLogicQuotesModuleKt : SharedLogicBase
++ (void)doInitKoin __attribute__((swift_name("doInitKoin()")));
+@property (class, readonly) SharedLogicKoin_coreModule *quotesModule __attribute__((swift_name("quotesModule")));
+@end
+
+__attribute__((swift_name("KotlinThrowable")))
+@interface SharedLogicKotlinThrowable : SharedLogicBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithCause:(SharedLogicKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(SharedLogicKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
+
+/**
+ * @note annotations
+ *   kotlin.experimental.ExperimentalNativeApi
+*/
+- (SharedLogicKotlinArray<NSString *> *)getStackTrace __attribute__((swift_name("getStackTrace()")));
+- (void)printStackTrace __attribute__((swift_name("printStackTrace()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) SharedLogicKotlinThrowable * _Nullable cause __attribute__((swift_name("cause")));
+@property (readonly) NSString * _Nullable message __attribute__((swift_name("message")));
+- (NSError *)asError __attribute__((swift_name("asError()")));
+@end
+
+__attribute__((swift_name("KotlinException")))
+@interface SharedLogicKotlinException : SharedLogicKotlinThrowable
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithCause:(SharedLogicKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(SharedLogicKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
+@end
+
+__attribute__((swift_name("KotlinRuntimeException")))
+@interface SharedLogicKotlinRuntimeException : SharedLogicKotlinException
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithCause:(SharedLogicKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(SharedLogicKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
+@end
+
+__attribute__((swift_name("KotlinIllegalStateException")))
+@interface SharedLogicKotlinIllegalStateException : SharedLogicKotlinRuntimeException
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithCause:(SharedLogicKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(SharedLogicKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlin.SinceKotlin(version="1.4")
+*/
+__attribute__((swift_name("KotlinCancellationException")))
+@interface SharedLogicKotlinCancellationException : SharedLogicKotlinIllegalStateException
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithCause:(SharedLogicKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(SharedLogicKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
 @end
 
 
@@ -1155,67 +1214,6 @@ __attribute__((swift_name("Ktor_client_coreHttpClient")))
 @property (readonly) SharedLogicKtor_client_coreHttpSendPipeline *sendPipeline __attribute__((swift_name("sendPipeline")));
 @end
 
-__attribute__((swift_name("KotlinThrowable")))
-@interface SharedLogicKotlinThrowable : SharedLogicBase
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithCause:(SharedLogicKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(SharedLogicKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
-
-/**
- * @note annotations
- *   kotlin.experimental.ExperimentalNativeApi
-*/
-- (SharedLogicKotlinArray<NSString *> *)getStackTrace __attribute__((swift_name("getStackTrace()")));
-- (void)printStackTrace __attribute__((swift_name("printStackTrace()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) SharedLogicKotlinThrowable * _Nullable cause __attribute__((swift_name("cause")));
-@property (readonly) NSString * _Nullable message __attribute__((swift_name("message")));
-- (NSError *)asError __attribute__((swift_name("asError()")));
-@end
-
-__attribute__((swift_name("KotlinException")))
-@interface SharedLogicKotlinException : SharedLogicKotlinThrowable
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithCause:(SharedLogicKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(SharedLogicKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
-@end
-
-__attribute__((swift_name("KotlinRuntimeException")))
-@interface SharedLogicKotlinRuntimeException : SharedLogicKotlinException
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithCause:(SharedLogicKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(SharedLogicKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
-@end
-
-__attribute__((swift_name("KotlinIllegalStateException")))
-@interface SharedLogicKotlinIllegalStateException : SharedLogicKotlinRuntimeException
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithCause:(SharedLogicKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(SharedLogicKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
-@end
-
-
-/**
- * @note annotations
- *   kotlin.SinceKotlin(version="1.4")
-*/
-__attribute__((swift_name("KotlinCancellationException")))
-@interface SharedLogicKotlinCancellationException : SharedLogicKotlinIllegalStateException
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithCause:(SharedLogicKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(SharedLogicKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
-@end
-
 
 /**
  * Serialization strategy defines the serial form of a type [T], including its structural description,
@@ -1404,202 +1402,6 @@ __attribute__((swift_name("Kotlinx_serialization_coreKSerializer")))
 
 
 /**
- * An asynchronous data stream that sequentially emits values and completes normally or with an exception.
- *
- * _Intermediate operators_ on the flow such as [map], [filter], [take], [zip], etc are functions that are
- * applied to the _upstream_ flow or flows and return a _downstream_ flow where further operators can be applied to.
- * Intermediate operations do not execute any code in the flow and are not suspending functions themselves.
- * They only set up a chain of operations for future execution and quickly return.
- * This is known as a _cold flow_ property.
- *
- * _Terminal operators_ on the flow are either suspending functions such as [collect], [single], [reduce], [toList], etc.
- * or [launchIn] operator that starts collection of the flow in the given scope.
- * They are applied to the upstream flow and trigger execution of all operations.
- * Execution of the flow is also called _collecting the flow_  and is always performed in a suspending manner
- * without actual blocking. Terminal operators complete normally or exceptionally depending on successful or failed
- * execution of all the flow operations in the upstream. The most basic terminal operator is [collect], for example:
- *
- * ```
- * try {
- *     flow.collect { value ->
- *         println("Received $value")
- *     }
- * } catch (e: Exception) {
- *     println("The flow has thrown an exception: $e")
- * }
- * ```
- *
- * By default, flows are _sequential_ and all flow operations are executed sequentially in the same coroutine,
- * with an exception for a few operations specifically designed to introduce concurrency into flow
- * execution such as [buffer] and [flatMapMerge]. See their documentation for details.
- *
- * The `Flow` interface does not carry information whether a flow is a _cold_ stream that can be collected repeatedly and
- * triggers execution of the same code every time it is collected, or if it is a _hot_ stream that emits different
- * values from the same running source on each collection. Usually flows represent _cold_ streams, but
- * there is a [SharedFlow] subtype that represents _hot_ streams. In addition to that, any flow can be turned
- * into a _hot_ one by the [stateIn] and [shareIn] operators, or by converting the flow into a hot channel
- * via the [produceIn] operator.
- *
- * ### Flow builders
- *
- * There are the following basic ways to create a flow:
- *
- * - [flowOf(...)][flowOf] functions to create a flow from a fixed set of values.
- * - [asFlow()][asFlow] extension functions on various types to convert them into flows.
- * - [flow { ... }][flow] builder function to construct arbitrary flows from
- *   sequential calls to [emit][FlowCollector.emit] function.
- * - [channelFlow { ... }][channelFlow] builder function to construct arbitrary flows from
- *   potentially concurrent calls to the [send][kotlinx.coroutines.channels.SendChannel.send] function.
- * - [MutableStateFlow] and [MutableSharedFlow] define the corresponding constructor functions to create
- *   a _hot_ flow that can be directly updated.
- *
- * ### Flow constraints
- *
- * All implementations of the `Flow` interface must adhere to two key properties described in detail below:
- *
- * - Context preservation.
- * - Exception transparency.
- *
- * These properties ensure the ability to perform local reasoning about the code with flows and modularize the code
- * in such a way that upstream flow emitters can be developed separately from downstream flow collectors.
- * A user of a flow does not need to be aware of implementation details of the upstream flows it uses.
- *
- * ### Context preservation
- *
- * The flow has a context preservation property: it encapsulates its own execution context and never propagates or leaks
- * it downstream, thus making reasoning about the execution context of particular transformations or terminal
- * operations trivial.
- *
- * There is only one way to change the context of a flow: the [flowOn][Flow.flowOn] operator
- * that changes the upstream context ("everything above the `flowOn` operator").
- * For additional information refer to its documentation.
- *
- * This reasoning can be demonstrated in practice:
- *
- * ```
- * val flowA = flowOf(1, 2, 3)
- *     .map { it + 1 } // Will be executed in ctxA
- *     .flowOn(ctxA) // Changes the upstream context: flowOf and map
- *
- * // Now we have a context-preserving flow: it is executed somewhere but this information is encapsulated in the flow itself
- *
- * val filtered = flowA // ctxA is encapsulated in flowA
- *    .filter { it == 3 } // Pure operator without a context yet
- *
- * withContext(Dispatchers.Main) {
- *     // All non-encapsulated operators will be executed in Main: filter and single
- *     val result = filtered.single()
- *     myUi.text = result
- * }
- * ```
- *
- * From the implementation point of view, it means that all flow implementations should
- * only emit from the same coroutine context.
- * This constraint is efficiently enforced by the default [flow] builder.
- * The [flow] builder should be used if the flow implementation does not start any coroutines.
- * Its implementation prevents most of the development mistakes:
- *
- * ```
- * val myFlow = flow {
- *     // GlobalScope.launch { // is prohibited
- *     // launch(Dispatchers.IO) { // is prohibited
- *     // withContext(CoroutineName("myFlow")) { // is prohibited
- *     emit(1) // OK
- *     coroutineScope {
- *         emit(2) // OK -- still the same coroutine
- *     }
- * }
- * ```
- *
- * Use [channelFlow] if the collection and emission of a flow are to be separated into multiple coroutines.
- * It encapsulates all the context preservation work and allows you to focus on your
- * domain-specific problem, rather than invariant implementation details.
- * It is possible to use any combination of coroutine builders from within [channelFlow].
- *
- * If you are looking for performance and are sure that no concurrent emits and context jumps will happen,
- * the [flow] builder can be used alongside a [coroutineScope] or [supervisorScope] instead:
- * - Scoped primitive should be used to provide a [CoroutineScope].
- * - Changing the context of emission is prohibited, no matter whether it is `withContext(ctx)` or
- *   a builder argument (e.g. `launch(ctx)`).
- * - Collecting another flow from a separate context is allowed, but it has the same effect as
- *   applying the [flowOn] operator to that flow, which is more efficient.
- *
- * ### Exception transparency
- *
- * When `emit` or `emitAll` throws, the Flow implementations must immediately stop emitting new values and finish with an exception.
- * For diagnostics or application-specific purposes, the exception may be different from the one thrown by the emit operation,
- * suppressing the original exception as discussed below.
- * If there is a need to emit values after the downstream failed, please use the [catch][Flow.catch] operator.
- *
- * The [catch][Flow.catch] operator only catches upstream exceptions, but passes
- * all downstream exceptions. Similarly, terminal operators like [collect][Flow.collect]
- * throw any unhandled exceptions that occur in their code or in upstream flows, for example:
- *
- * ```
- * flow { emitData() }
- *     .map { computeOne(it) }
- *     .catch { ... } // catches exceptions in emitData and computeOne
- *     .map { computeTwo(it) }
- *     .collect { process(it) } // throws exceptions from process and computeTwo
- * ```
- * The same reasoning can be applied to the [onCompletion] operator that is a declarative replacement for the `finally` block.
- *
- * All exception-handling Flow operators follow the principle of exception suppression:
- *
- * If the upstream flow throws an exception during its completion when the downstream exception has been thrown,
- * the downstream exception becomes superseded and suppressed by the upstream exception, being a semantic
- * equivalent of throwing from `finally` block. However, this doesn't affect the operation of the exception-handling operators,
- * which consider the downstream exception to be the root cause and behave as if the upstream didn't throw anything.
- *
- * Failure to adhere to the exception transparency requirement can lead to strange behaviors which make
- * it hard to reason about the code because an exception in the `collect { ... }` could be somehow "caught"
- * by an upstream flow, limiting the ability of local reasoning about the code.
- *
- * Flow machinery enforces exception transparency at runtime and throws [IllegalStateException] on any attempt to emit a value,
- * if an exception has been thrown on previous attempt.
- *
- * ### Reactive streams
- *
- * Flow is [Reactive Streams](http://www.reactive-streams.org/) compliant, you can safely interop it with
- * reactive streams using `Flow.asPublisher` and `Publisher.asFlow` from `kotlinx-coroutines-reactive` module.
- *
- * ### Not stable for inheritance
- *
- * **The `Flow` interface is not stable for inheritance in 3rd party libraries**, as new methods
- * might be added to this interface in the future, but is stable for use.
- *
- * Use the `flow { ... }` builder function to create an implementation, or extend [AbstractFlow].
- * These implementations ensure that the context preservation property is not violated, and prevent most
- * of the developer mistakes related to concurrency, inconsistent flow dispatchers, and cancellation.
- */
-__attribute__((swift_name("Kotlinx_coroutines_coreFlow")))
-@protocol SharedLogicKotlinx_coroutines_coreFlow
-@required
-
-/**
- * Accepts the given [collector] and [emits][FlowCollector.emit] values into it.
- *
- * This method can be used along with SAM-conversion of [FlowCollector]:
- * ```
- * myFlow.collect { value -> println("Collected $value") }
- * ```
- *
- * ### Method inheritance
- *
- * To ensure the context preservation property, it is not recommended implementing this method directly.
- * Instead, [AbstractFlow] can be used as the base type to properly ensure flow's properties.
- *
- * All default flow implementations ensure context preservation and exception transparency properties on a best-effort basis
- * and throw [IllegalStateException] if a violation was detected.
- *
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)collectCollector:(id<SharedLogicKotlinx_coroutines_coreFlowCollector>)collector completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("collect(collector:completionHandler:)")));
-@end
-
-
-/**
  * Serves as the base interface for an [HttpClient]'s engine.
  *
  * An `HttpClientEngine` represents the underlying network implementation that
@@ -1714,6 +1516,90 @@ __attribute__((swift_name("Ktor_client_coreHttpClientEngine")))
  * [Report a problem](https://ktor.io/feedback/?fqname=io.ktor.client.engine.HttpClientEngine.supportedCapabilities)
  */
 @property (readonly) NSSet<id<SharedLogicKtor_client_coreHttpClientEngineCapability>> *supportedCapabilities __attribute__((swift_name("supportedCapabilities")));
+@end
+
+
+/**
+ * Koin Module
+ * Gather/help compose Koin definitions
+ *
+ * @author Arnaud Giuliani
+ */
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreModule")))
+@interface SharedLogicKoin_coreModule : SharedLogicBase
+- (instancetype)initWith_createdAtStart:(BOOL)_createdAtStart __attribute__((swift_name("init(_createdAtStart:)"))) __attribute__((objc_designated_initializer));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * Declare a Factory definition
+ * @param qualifier
+ * @param definition - definition function
+ */
+- (SharedLogicKoin_coreKoinDefinition<id> *)factoryQualifier:(id<SharedLogicKoin_coreQualifier> _Nullable)qualifier definition:(id _Nullable (^)(SharedLogicKoin_coreScope *, SharedLogicKoin_coreParametersHolder *))definition __attribute__((swift_name("factory(qualifier:definition:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * A collection of [Module] from which the current [Module] is compose.
+ * Duplicated modules are ignored.
+ */
+- (void)includesModule:(SharedLogicKotlinArray<SharedLogicKoin_coreModule *> *)module __attribute__((swift_name("includes(module:)")));
+
+/**
+ * A collection of [Module] from which the current [Module] is compose.
+ * Duplicated modules are ignored.
+ */
+- (void)includesModule_:(id)module __attribute__((swift_name("includes(module_:)")));
+- (void)indexPrimaryTypeInstanceFactory:(SharedLogicKoin_coreInstanceFactory<id> *)instanceFactory __attribute__((swift_name("indexPrimaryType(instanceFactory:)")));
+- (void)indexSecondaryTypesInstanceFactory:(SharedLogicKoin_coreInstanceFactory<id> *)instanceFactory __attribute__((swift_name("indexSecondaryTypes(instanceFactory:)")));
+
+/**
+ * Help write list of Modules
+ */
+- (NSArray<SharedLogicKoin_coreModule *> *)plusModules:(NSArray<SharedLogicKoin_coreModule *> *)modules __attribute__((swift_name("plus(modules:)")));
+
+/**
+ * Help write list of Modules
+ */
+- (NSArray<SharedLogicKoin_coreModule *> *)plusModule:(SharedLogicKoin_coreModule *)module __attribute__((swift_name("plus(module:)")));
+- (void)prepareForCreationAtStartInstanceFactory:(SharedLogicKoin_coreSingleInstanceFactory<id> *)instanceFactory __attribute__((swift_name("prepareForCreationAtStart(instanceFactory:)")));
+
+/**
+ * Class Typed Scope
+ */
+- (void)scopeScopeSet:(void (^)(SharedLogicKoin_coreScopeDSL *))scopeSet __attribute__((swift_name("scope(scopeSet:)")));
+
+/**
+ * Declare a group a scoped definition with a given scope qualifier
+ * @param qualifier
+ */
+- (void)scopeQualifier:(id<SharedLogicKoin_coreQualifier>)qualifier scopeSet:(void (^)(SharedLogicKoin_coreScopeDSL *))scopeSet __attribute__((swift_name("scope(qualifier:scopeSet:)")));
+
+/**
+ * Declare a Single definition
+ * @param qualifier
+ * @param createdAtStart
+ * @param definition - definition function
+ */
+- (SharedLogicKoin_coreKoinDefinition<id> *)singleQualifier:(id<SharedLogicKoin_coreQualifier> _Nullable)qualifier createdAtStart:(BOOL)createdAtStart definition:(id _Nullable (^)(SharedLogicKoin_coreScope *, SharedLogicKoin_coreParametersHolder *))definition __attribute__((swift_name("single(qualifier:createdAtStart:definition:)")));
+@property (readonly) SharedLogicMutableSet<SharedLogicKoin_coreSingleInstanceFactory<id> *> *eagerInstances __attribute__((swift_name("eagerInstances")));
+@property (readonly) NSString *id __attribute__((swift_name("id")));
+@property (readonly) NSMutableArray<SharedLogicKoin_coreModule *> *includedModules __attribute__((swift_name("includedModules")));
+@property (readonly) BOOL isLoaded __attribute__((swift_name("isLoaded")));
+@property (readonly) SharedLogicMutableDictionary<NSString *, SharedLogicKoin_coreInstanceFactory<id> *> *mappings __attribute__((swift_name("mappings")));
+@property (readonly) SharedLogicMutableSet<id<SharedLogicKoin_coreQualifier>> *scopes __attribute__((swift_name("scopes")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinArray")))
+@interface SharedLogicKotlinArray<T> : SharedLogicBase
++ (instancetype)arrayWithSize:(int32_t)size init:(T _Nullable (^)(SharedLogicInt *))init __attribute__((swift_name("init(size:init:)")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (T _Nullable)getIndex:(int32_t)index __attribute__((swift_name("get(index:)")));
+- (id<SharedLogicKotlinIterator>)iterator __attribute__((swift_name("iterator()")));
+- (void)setIndex:(int32_t)index value:(T _Nullable)value __attribute__((swift_name("set(index:value:)")));
+@property (readonly) int32_t size __attribute__((swift_name("size")));
 @end
 
 
@@ -2412,18 +2298,6 @@ __attribute__((swift_name("Ktor_client_coreHttpSendPipeline")))
 - (instancetype)initWithPhase:(SharedLogicKtor_utilsPipelinePhase *)phase interceptors:(NSArray<id<SharedLogicKotlinSuspendFunction2>> *)interceptors __attribute__((swift_name("init(phase:interceptors:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 @property (class, readonly, getter=companion) SharedLogicKtor_client_coreHttpSendPipelinePhases *companion __attribute__((swift_name("companion")));
 @property (readonly) BOOL developmentMode __attribute__((swift_name("developmentMode")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("KotlinArray")))
-@interface SharedLogicKotlinArray<T> : SharedLogicBase
-+ (instancetype)arrayWithSize:(int32_t)size init:(T _Nullable (^)(SharedLogicInt *))init __attribute__((swift_name("init(size:init:)")));
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-- (T _Nullable)getIndex:(int32_t)index __attribute__((swift_name("get(index:)")));
-- (id<SharedLogicKotlinIterator>)iterator __attribute__((swift_name("iterator()")));
-- (void)setIndex:(int32_t)index value:(T _Nullable)value __attribute__((swift_name("set(index:value:)")));
-@property (readonly) int32_t size __attribute__((swift_name("size")));
 @end
 
 
@@ -3371,43 +3245,6 @@ __attribute__((swift_name("Kotlinx_serialization_coreDecoder")))
 
 
 /**
- * [FlowCollector] is used as an intermediate or a terminal collector of the flow and represents
- * an entity that accepts values emitted by the [Flow].
- *
- * This interface should usually not be implemented directly, but rather used as a receiver in a [flow] builder when implementing a custom operator,
- * or with SAM-conversion.
- * Implementations of this interface are not thread-safe.
- *
- * Example of usage:
- *
- * ```
- * val flow = getMyEvents()
- * try {
- *     flow.collect { value ->
- *         println("Received $value")
- *     }
- *     println("My events are consumed successfully")
- * } catch (e: Throwable) {
- *     println("Exception from the flow: $e")
- * }
- * ```
- */
-__attribute__((swift_name("Kotlinx_coroutines_coreFlowCollector")))
-@protocol SharedLogicKotlinx_coroutines_coreFlowCollector
-@required
-
-/**
- * Collects the value emitted by the upstream.
- * This method is not thread-safe and should not be invoked concurrently.
- *
- * @note This method converts instances of CancellationException to errors.
- * Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)emitValue:(id _Nullable)value completionHandler:(void (^)(NSError * _Nullable))completionHandler __attribute__((swift_name("emit(value:completionHandler:)")));
-@end
-
-
-/**
  * Actual data of the [HttpRequest], including [url], [method], [headers], [body] and [executionContext].
  * Built by [HttpRequestBuilder].
  *
@@ -3866,6 +3703,348 @@ __attribute__((swift_name("Kotlinx_coroutines_coreCoroutineDispatcher")))
 
 /** @suppress for nicer debugging */
 - (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreKoinDefinition")))
+@interface SharedLogicKoin_coreKoinDefinition<R> : SharedLogicBase
+- (instancetype)initWithModule:(SharedLogicKoin_coreModule *)module factory:(SharedLogicKoin_coreInstanceFactory<R> *)factory __attribute__((swift_name("init(module:factory:)"))) __attribute__((objc_designated_initializer));
+- (SharedLogicKoin_coreKoinDefinition<R> *)doCopyModule:(SharedLogicKoin_coreModule *)module factory:(SharedLogicKoin_coreInstanceFactory<R> *)factory __attribute__((swift_name("doCopy(module:factory:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) SharedLogicKoin_coreInstanceFactory<R> *factory __attribute__((swift_name("factory")));
+@property (readonly) SharedLogicKoin_coreModule *module __attribute__((swift_name("module")));
+@end
+
+
+/**
+ * Help qualify a component
+ */
+__attribute__((swift_name("Koin_coreQualifier")))
+@protocol SharedLogicKoin_coreQualifier
+@required
+@property (readonly) NSString *value __attribute__((swift_name("value")));
+@end
+
+__attribute__((swift_name("Koin_coreLockable")))
+@interface SharedLogicKoin_coreLockable : SharedLogicBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreScope")))
+@interface SharedLogicKoin_coreScope : SharedLogicKoin_coreLockable
+- (instancetype)initWithScopeQualifier:(id<SharedLogicKoin_coreQualifier>)scopeQualifier id:(NSString *)id isRoot:(BOOL)isRoot scopeArchetype:(SharedLogicKoin_coreTypeQualifier * _Nullable)scopeArchetype _koin:(SharedLogicKoin_coreKoin *)_koin __attribute__((swift_name("init(scopeQualifier:id:isRoot:scopeArchetype:_koin:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
++ (instancetype)new __attribute__((unavailable));
+
+/**
+ * Close all instances from this scope
+ */
+- (void)close __attribute__((swift_name("close()")));
+
+/**
+ * Declare an instance definition for the current scope using the given object.
+ *
+ * This results in declaring a scoped definition of type `T`, bound to the provided instance.
+ * The instance will be dropped when the scope is closed.
+ *
+ * The `holdInstance` parameter controls whether the instance is retained by Koin or not:
+ * - `holdInstance = true` → the instance is held within the scope and behaves like a singleton.
+ * - `holdInstance = false` → the instance is not held; the definition exists in current scope, but cannot be resolved in other scope instance.
+ *
+ * This is useful for injecting pre-constructed instances into a specific scope.
+ *
+ * @param instance The instance to declare.
+ * @param qualifier An optional qualifier to distinguish this binding.
+ * @param secondaryTypes A list of additional types this instance should be bound to.
+ * @param allowOverride Whether this declaration can override an existing one (default is true).
+ * @param holdInstance Whether to retain the instance for future resolution within new scopes, or just hold for current scope (holdInstance = false).
+ */
+- (void)declareInstance:(id _Nullable)instance qualifier:(id<SharedLogicKoin_coreQualifier> _Nullable)qualifier secondaryTypes:(NSArray<id<SharedLogicKotlinKClass>> *)secondaryTypes allowOverride:(BOOL)allowOverride holdInstance:(BOOL)holdInstance __attribute__((swift_name("declare(instance:qualifier:secondaryTypes:allowOverride:holdInstance:)")));
+
+/**
+ * Get a Koin instance
+ * @param qualifier
+ * @param scope
+ * @param parameters
+ */
+- (id)getQualifier:(id<SharedLogicKoin_coreQualifier> _Nullable)qualifier parameters:(SharedLogicKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("get(qualifier:parameters:)")));
+
+/**
+ * Get a Koin instance
+ * @param clazz
+ * @param qualifier
+ * @param parameters
+ *
+ * @return instance of type T
+ */
+- (id _Nullable)getClazz:(id<SharedLogicKotlinKClass>)clazz qualifier:(id<SharedLogicKoin_coreQualifier> _Nullable)qualifier parameters:(SharedLogicKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("get(clazz:qualifier:parameters:)")));
+
+/**
+ * Get a all instance for given inferred class (in primary or secondary type)
+ *
+ * @return list of instances of type T
+ */
+- (NSArray<id> *)getAll __attribute__((swift_name("getAll()")));
+
+/**
+ * Get a all instance for given class (in primary or secondary type)
+ * @param clazz T
+ *
+ * @return list of instances of type T
+ */
+- (NSArray<id> *)getAllClazz:(id<SharedLogicKotlinKClass>)clazz __attribute__((swift_name("getAll(clazz:)")));
+
+/**
+ * Get current Koin instance
+ */
+- (SharedLogicKoin_coreKoin *)getKoin __attribute__((swift_name("getKoin()")));
+- (NSArray<NSString *> *)getLinkedScopeIds __attribute__((swift_name("getLinkedScopeIds()")));
+
+/**
+ * Get a Koin instance if available
+ * @param qualifier
+ * @param scope
+ * @param parameters
+ *
+ * @return instance of type T or null
+ */
+- (id _Nullable)getOrNullQualifier:(id<SharedLogicKoin_coreQualifier> _Nullable)qualifier parameters:(SharedLogicKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("getOrNull(qualifier:parameters:)")));
+
+/**
+ * Get a Koin instance if available
+ * @param qualifier
+ * @param scope
+ * @param parameters
+ *
+ * @return instance of type T or null
+ */
+- (id _Nullable)getOrNullClazz:(id<SharedLogicKotlinKClass>)clazz qualifier:(id<SharedLogicKoin_coreQualifier> _Nullable)qualifier parameters:(SharedLogicKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("getOrNull(clazz:qualifier:parameters:)")));
+
+/**
+ * Retrieve a property
+ * @param key
+ */
+- (id)getPropertyKey:(NSString *)key __attribute__((swift_name("getProperty(key:)")));
+
+/**
+ * Retrieve a property
+ * @param key
+ * @param defaultValue
+ */
+- (id)getPropertyKey:(NSString *)key defaultValue:(id)defaultValue __attribute__((swift_name("getProperty(key:defaultValue:)")));
+
+/**
+ * Retrieve a property
+ * @param key
+ */
+- (id _Nullable)getPropertyOrNullKey:(NSString *)key __attribute__((swift_name("getPropertyOrNull(key:)")));
+
+/**
+ * Get Scope
+ * @param scopeID
+ */
+- (SharedLogicKoin_coreScope *)getScopeScopeID:(NSString *)scopeID __attribute__((swift_name("getScope(scopeID:)")));
+
+/**
+ * Get Koin Scope "source" instance. Retrive the object instance, that initiated the creation of the scope.
+ *
+ * Deprecation: Source instance resolution is now done within graph resolution part. It's done in the regular "get()" function.
+ */
+- (id _Nullable)getSource __attribute__((swift_name("getSource()")));
+- (id _Nullable)getWithParametersClazz:(id<SharedLogicKotlinKClass>)clazz qualifier:(id<SharedLogicKoin_coreQualifier> _Nullable)qualifier parameters:(SharedLogicKoin_coreParametersHolder * _Nullable)parameters __attribute__((swift_name("getWithParameters(clazz:qualifier:parameters:)")));
+
+/**
+ * Lazy inject a Koin instance
+ * @param qualifier
+ * @param mode - LazyThreadSafetyMode
+ * @param parameters
+ *
+ * @return Lazy instance of type T
+ */
+- (id<SharedLogicKotlinLazy>)injectQualifier:(id<SharedLogicKoin_coreQualifier> _Nullable)qualifier mode:(SharedLogicKotlinLazyThreadSafetyMode *)mode parameters:(SharedLogicKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("inject(qualifier:mode:parameters:)")));
+
+/**
+ * Lazy inject a Koin instance if available
+ * @param qualifier
+ * @param mode - LazyThreadSafetyMode
+ * @param parameters
+ *
+ * @return Lazy instance of type T or null
+ */
+- (id<SharedLogicKotlinLazy>)injectOrNullQualifier:(id<SharedLogicKoin_coreQualifier> _Nullable)qualifier mode:(SharedLogicKotlinLazyThreadSafetyMode *)mode parameters:(SharedLogicKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("injectOrNull(qualifier:mode:parameters:)")));
+- (BOOL)isNotClosed __attribute__((swift_name("isNotClosed()")));
+
+/**
+ * Add parent Scopes to allow instance resolution
+ * i.e: linkTo(scopeC) - allow to resolve instance to current scope and scopeC
+ *
+ * @param scopes - Scopes to link with
+ */
+- (void)linkToScopes:(SharedLogicKotlinArray<SharedLogicKoin_coreScope *> *)scopes __attribute__((swift_name("linkTo(scopes:)")));
+
+/**
+ * Register a callback for this Scope Instance
+ */
+- (void)registerCallbackCallback:(id<SharedLogicKoin_coreScopeCallback>)callback __attribute__((swift_name("registerCallback(callback:)")));
+- (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * Remove linked scope
+ */
+- (void)unlinkScopes:(SharedLogicKotlinArray<SharedLogicKoin_coreScope *> *)scopes __attribute__((swift_name("unlink(scopes:)")));
+@property (readonly) BOOL closed __attribute__((swift_name("closed")));
+@property (readonly) NSString *id __attribute__((swift_name("id")));
+@property (readonly) BOOL isRoot __attribute__((swift_name("isRoot")));
+@property (readonly) SharedLogicKoin_coreLogger *logger __attribute__((swift_name("logger")));
+@property (readonly) SharedLogicKoin_coreTypeQualifier * _Nullable scopeArchetype __attribute__((swift_name("scopeArchetype")));
+@property (readonly) id<SharedLogicKoin_coreQualifier> scopeQualifier __attribute__((swift_name("scopeQualifier")));
+@property id _Nullable sourceValue __attribute__((swift_name("sourceValue")));
+@end
+
+
+/**
+ * DefinitionParameters - Parameter holder
+ * Usable with exploded declaration
+ *
+ * @author - Arnaud GIULIANI
+ */
+__attribute__((swift_name("Koin_coreParametersHolder")))
+@interface SharedLogicKoin_coreParametersHolder : SharedLogicBase
+- (instancetype)initWith_values:(NSMutableArray<id> *)_values useIndexedValues:(SharedLogicBoolean * _Nullable)useIndexedValues __attribute__((swift_name("init(_values:useIndexedValues:)"))) __attribute__((objc_designated_initializer));
+- (SharedLogicKoin_coreParametersHolder *)addValue:(id)value __attribute__((swift_name("add(value:)")));
+- (id _Nullable)component1 __attribute__((swift_name("component1()")));
+- (id _Nullable)component2 __attribute__((swift_name("component2()")));
+- (id _Nullable)component3 __attribute__((swift_name("component3()")));
+- (id _Nullable)component4 __attribute__((swift_name("component4()")));
+- (id _Nullable)component5 __attribute__((swift_name("component5()")));
+- (id _Nullable)elementAtI:(int32_t)i clazz:(id<SharedLogicKotlinKClass>)clazz __attribute__((swift_name("elementAt(i:clazz:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * Get first element of given type T
+ * return T
+ */
+- (id)get __attribute__((swift_name("get()")));
+
+/**
+ * get element at given index
+ * return T
+ */
+- (id _Nullable)getI:(int32_t)i __attribute__((swift_name("get(i:)")));
+
+/**
+ * Get first element of given type T
+ * return T
+ */
+- (id _Nullable)getOrNull __attribute__((swift_name("getOrNull()")));
+
+/**
+ * Get first element of given type T
+ * return T
+ */
+- (id _Nullable)getOrNullClazz:(id<SharedLogicKotlinKClass>)clazz __attribute__((swift_name("getOrNull(clazz:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (SharedLogicKoin_coreParametersHolder *)insertIndex:(int32_t)index value:(id)value __attribute__((swift_name("insert(index:value:)")));
+
+/**
+ * Tells if it has no parameter
+ */
+- (BOOL)isEmpty __attribute__((swift_name("isEmpty()")));
+
+/**
+ * Tells if it has parameters
+ */
+- (BOOL)isNotEmpty __attribute__((swift_name("isNotEmpty()")));
+- (void)setI:(int32_t)i t:(id _Nullable)t __attribute__((swift_name("set(i:t:)")));
+
+/**
+ * Number of contained elements
+ */
+- (int32_t)size __attribute__((swift_name("size()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property int32_t index __attribute__((swift_name("index")));
+@property (readonly) SharedLogicBoolean * _Nullable useIndexedValues __attribute__((swift_name("useIndexedValues")));
+@property (readonly) NSArray<id> *values __attribute__((swift_name("values")));
+@end
+
+
+/**
+ * Koin Instance Holder
+ * create/get/release an instance of given definition
+ */
+__attribute__((swift_name("Koin_coreInstanceFactory")))
+@interface SharedLogicKoin_coreInstanceFactory<T> : SharedLogicKoin_coreLockable
+- (instancetype)initWithBeanDefinition:(SharedLogicKoin_coreBeanDefinition<T> *)beanDefinition __attribute__((swift_name("init(beanDefinition:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
++ (instancetype)new __attribute__((unavailable));
+@property (class, readonly, getter=companion) SharedLogicKoin_coreInstanceFactoryCompanion *companion __attribute__((swift_name("companion")));
+
+/**
+ * Create an instance
+ * @param context
+ * @return T
+ */
+- (T _Nullable)createContext:(SharedLogicKoin_coreResolutionContext *)context __attribute__((swift_name("create(context:)")));
+
+/**
+ * Drop the instance
+ */
+- (void)dropScope:(SharedLogicKoin_coreScope * _Nullable)scope __attribute__((swift_name("drop(scope:)")));
+- (void)dropAll __attribute__((swift_name("dropAll()")));
+
+/**
+ * Retrieve an instance
+ * @param context
+ * @return T
+ */
+- (T _Nullable)getContext:(SharedLogicKoin_coreResolutionContext *)context __attribute__((swift_name("get(context:)")));
+
+/**
+ * Is instance created
+ */
+- (BOOL)isCreatedContext:(SharedLogicKoin_coreResolutionContext * _Nullable)context __attribute__((swift_name("isCreated(context:)")));
+@property (readonly) SharedLogicKoin_coreBeanDefinition<T> *beanDefinition __attribute__((swift_name("beanDefinition")));
+@end
+
+
+/**
+ * Single instance holder
+ * @author Arnaud Giuliani
+ */
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreSingleInstanceFactory")))
+@interface SharedLogicKoin_coreSingleInstanceFactory<T> : SharedLogicKoin_coreInstanceFactory<T>
+- (instancetype)initWithBeanDefinition:(SharedLogicKoin_coreBeanDefinition<T> *)beanDefinition __attribute__((swift_name("init(beanDefinition:)"))) __attribute__((objc_designated_initializer));
+- (T _Nullable)createContext:(SharedLogicKoin_coreResolutionContext *)context __attribute__((swift_name("create(context:)")));
+- (void)dropScope:(SharedLogicKoin_coreScope * _Nullable)scope __attribute__((swift_name("drop(scope:)")));
+- (void)dropAll __attribute__((swift_name("dropAll()")));
+- (T _Nullable)getContext:(SharedLogicKoin_coreResolutionContext *)context __attribute__((swift_name("get(context:)")));
+- (BOOL)isCreatedContext:(SharedLogicKoin_coreResolutionContext * _Nullable)context __attribute__((swift_name("isCreated(context:)")));
+@end
+
+
+/**
+ * DSL Scope Definition
+ */
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreScopeDSL")))
+@interface SharedLogicKoin_coreScopeDSL : SharedLogicBase
+- (instancetype)initWithScopeQualifier:(id<SharedLogicKoin_coreQualifier>)scopeQualifier module:(SharedLogicKoin_coreModule *)module __attribute__((swift_name("init(scopeQualifier:module:)"))) __attribute__((objc_designated_initializer));
+- (SharedLogicKoin_coreKoinDefinition<id> *)factoryQualifier:(id<SharedLogicKoin_coreQualifier> _Nullable)qualifier definition:(id _Nullable (^)(SharedLogicKoin_coreScope *, SharedLogicKoin_coreParametersHolder *))definition __attribute__((swift_name("factory(qualifier:definition:)")));
+- (SharedLogicKoin_coreKoinDefinition<id> *)scopedQualifier:(id<SharedLogicKoin_coreQualifier> _Nullable)qualifier definition:(id _Nullable (^)(SharedLogicKoin_coreScope *, SharedLogicKoin_coreParametersHolder *))definition __attribute__((swift_name("scoped(qualifier:definition:)")));
+@property (readonly) SharedLogicKoin_coreModule *module __attribute__((swift_name("module")));
+@property (readonly) id<SharedLogicKoin_coreQualifier> scopeQualifier __attribute__((swift_name("scopeQualifier")));
+@end
+
+__attribute__((swift_name("KotlinIterator")))
+@protocol SharedLogicKotlinIterator
+@required
+- (BOOL)hasNext __attribute__((swift_name("hasNext()")));
+- (id _Nullable)next __attribute__((swift_name("next()")));
 @end
 
 __attribute__((swift_name("KotlinCoroutineContextKey")))
@@ -4614,13 +4793,6 @@ __attribute__((swift_name("Ktor_client_coreHttpSendPipeline.Phases")))
  * [Report a problem](https://ktor.io/feedback/?fqname=io.ktor.client.request.HttpSendPipeline.Phases.State)
  */
 @property (readonly) SharedLogicKtor_utilsPipelinePhase *State __attribute__((swift_name("State")));
-@end
-
-__attribute__((swift_name("KotlinIterator")))
-@protocol SharedLogicKotlinIterator
-@required
-- (BOOL)hasNext __attribute__((swift_name("hasNext()")));
-- (id _Nullable)next __attribute__((swift_name("next()")));
 @end
 
 
@@ -6012,6 +6184,398 @@ __attribute__((swift_name("Kotlinx_coroutines_coreRunnable")))
 - (void)run __attribute__((swift_name("run()")));
 @end
 
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreTypeQualifier")))
+@interface SharedLogicKoin_coreTypeQualifier : SharedLogicBase <SharedLogicKoin_coreQualifier>
+- (instancetype)initWithType:(id<SharedLogicKotlinKClass>)type __attribute__((swift_name("init(type:)"))) __attribute__((objc_designated_initializer));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) id<SharedLogicKotlinKClass> type __attribute__((swift_name("type")));
+@property (readonly) NSString *value __attribute__((swift_name("value")));
+@end
+
+
+/**
+ * Koin
+ *
+ * Gather main features to use on Koin context
+ *
+ * @author Arnaud Giuliani
+ */
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreKoin")))
+@interface SharedLogicKoin_coreKoin : SharedLogicBase
+
+/**
+ * Koin
+ *
+ * Gather main features to use on Koin context
+ *
+ * @author Arnaud Giuliani
+ */
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
+
+/**
+ * Koin
+ *
+ * Gather main features to use on Koin context
+ *
+ * @author Arnaud Giuliani
+ */
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+
+/**
+ * Add a resolution extension to extend Koin's dependency resolution capabilities.
+ * Extensions allow Koin to resolve dependencies from external DI systems (e.g., Ktor DI).
+ *
+ * @param extension the resolution extension to add
+ */
+- (void)addResolutionExtensionExtension:(id<SharedLogicKoin_coreResolutionExtension>)extension __attribute__((swift_name("addResolutionExtension(extension:)")));
+
+/**
+ * Close all resources from context
+ */
+- (void)close __attribute__((swift_name("close()")));
+
+/**
+ * Create Single instances Definitions marked as createdAtStart
+ */
+- (void)createEagerInstances __attribute__((swift_name("createEagerInstances()")));
+
+/**
+ * Create a Scope instance
+ * @param scopeDefinitionName
+ */
+- (SharedLogicKoin_coreScope *)createScopeT:(id<SharedLogicKoin_coreKoinScopeComponent>)t __attribute__((swift_name("createScope(t:)")));
+
+/**
+ * Create a Scope instance
+ * @param scopeDefinitionName
+ */
+- (SharedLogicKoin_coreScope *)createScopeScopeId:(NSString *)scopeId __attribute__((swift_name("createScope(scopeId:)")));
+
+/**
+ * Create a Scope instance
+ * @param scopeId
+ */
+- (SharedLogicKoin_coreScope *)createScopeScopeId:(NSString *)scopeId source:(id _Nullable)source scopeArchetype:(SharedLogicKoin_coreTypeQualifier * _Nullable)scopeArchetype __attribute__((swift_name("createScope(scopeId:source:scopeArchetype:)")));
+
+/**
+ * Create a Scope instance
+ * @param scopeId
+ * @param scopeDefinitionName
+ */
+- (SharedLogicKoin_coreScope *)createScopeScopeId:(NSString *)scopeId qualifier:(id<SharedLogicKoin_coreQualifier>)qualifier source:(id _Nullable)source scopeArchetype:(SharedLogicKoin_coreTypeQualifier * _Nullable)scopeArchetype __attribute__((swift_name("createScope(scopeId:qualifier:source:scopeArchetype:)")));
+
+/**
+ * Declare a component definition from the given instance
+ * This result of declaring a single definition of type T, returning the given instance
+ *
+ * @param instance The instance you're declaring.
+ * @param qualifier Qualifier for this declaration
+ * @param secondaryTypes List of secondary bound types
+ * @param allowOverride Allows to override a previous declaration of the same type (default to true).
+ */
+- (void)declareInstance:(id _Nullable)instance qualifier:(id<SharedLogicKoin_coreQualifier> _Nullable)qualifier secondaryTypes:(NSArray<id<SharedLogicKotlinKClass>> *)secondaryTypes allowOverride:(BOOL)allowOverride __attribute__((swift_name("declare(instance:qualifier:secondaryTypes:allowOverride:)")));
+
+/**
+ * Delete a property
+ * @param key
+ */
+- (void)deletePropertyKey:(NSString *)key __attribute__((swift_name("deleteProperty(key:)")));
+
+/**
+ * Delete a scope instance
+ */
+- (void)deleteScopeScopeId:(NSString *)scopeId __attribute__((swift_name("deleteScope(scopeId:)")));
+
+/**
+ * Get a Koin instance
+ * @param qualifier
+ * @param scope
+ * @param parameters
+ */
+- (id)getQualifier:(id<SharedLogicKoin_coreQualifier> _Nullable)qualifier parameters:(SharedLogicKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("get(qualifier:parameters:)")));
+
+/**
+ * Get a Koin instance
+ * @param clazz
+ * @param qualifier
+ * @param scope
+ * @param parameters
+ *
+ * @return instance of type T
+ */
+- (id _Nullable)getClazz:(id<SharedLogicKotlinKClass>)clazz qualifier:(id<SharedLogicKoin_coreQualifier> _Nullable)qualifier parameters:(SharedLogicKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("get(clazz:qualifier:parameters:)")));
+
+/**
+ * Get a all instance for given inferred class (in primary or secondary type)
+ *
+ * @return list of instances of type T
+ */
+- (NSArray<id> *)getAll __attribute__((swift_name("getAll()")));
+
+/**
+ * Get or Create a Scope instance
+ * @param scopeId
+ * @param qualifier
+ */
+- (SharedLogicKoin_coreScope *)getOrCreateScopeScopeId:(NSString *)scopeId __attribute__((swift_name("getOrCreateScope(scopeId:)")));
+
+/**
+ * Get or Create a Scope instance
+ * @param scopeId
+ * @param qualifier
+ * @param source
+ */
+- (SharedLogicKoin_coreScope *)getOrCreateScopeScopeId:(NSString *)scopeId qualifier:(id<SharedLogicKoin_coreQualifier>)qualifier source:(id _Nullable)source __attribute__((swift_name("getOrCreateScope(scopeId:qualifier:source:)")));
+
+/**
+ * Get a Koin instance if available
+ * @param qualifier
+ * @param scope
+ * @param parameters
+ *
+ * @return instance of type T or null
+ */
+- (id _Nullable)getOrNullQualifier:(id<SharedLogicKoin_coreQualifier> _Nullable)qualifier parameters:(SharedLogicKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("getOrNull(qualifier:parameters:)")));
+
+/**
+ * Get a Koin instance if available
+ * @param clazz
+ * @param qualifier
+ * @param scope
+ * @param parameters
+ *
+ * @return instance of type T or null
+ */
+- (id _Nullable)getOrNullClazz:(id<SharedLogicKotlinKClass>)clazz qualifier:(id<SharedLogicKoin_coreQualifier> _Nullable)qualifier parameters:(SharedLogicKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("getOrNull(clazz:qualifier:parameters:)")));
+
+/**
+ * Retrieve a property
+ * @param key
+ */
+- (id _Nullable)getPropertyKey:(NSString *)key __attribute__((swift_name("getProperty(key:)")));
+
+/**
+ * Retrieve a property
+ * @param key
+ * @param defaultValue
+ */
+- (id)getPropertyKey:(NSString *)key defaultValue:(id)defaultValue __attribute__((swift_name("getProperty(key:defaultValue:)")));
+
+/**
+ * get a scope instance
+ * @param scopeId
+ */
+- (SharedLogicKoin_coreScope *)getScopeScopeId:(NSString *)scopeId __attribute__((swift_name("getScope(scopeId:)")));
+
+/**
+ * get a scope instance
+ * @param scopeId
+ */
+- (SharedLogicKoin_coreScope * _Nullable)getScopeOrNullScopeId:(NSString *)scopeId __attribute__((swift_name("getScopeOrNull(scopeId:)")));
+
+/**
+ * Lazy inject a Koin instance
+ * @param qualifier
+ * @param scope
+ * @param parameters
+ *
+ * @return Lazy instance of type T
+ */
+- (id<SharedLogicKotlinLazy>)injectQualifier:(id<SharedLogicKoin_coreQualifier> _Nullable)qualifier mode:(SharedLogicKotlinLazyThreadSafetyMode *)mode parameters:(SharedLogicKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("inject(qualifier:mode:parameters:)")));
+
+/**
+ * Lazy inject a Koin instance if available
+ * @param qualifier
+ * @param scope
+ * @param parameters
+ *
+ * @return Lazy instance of type T or null
+ */
+- (id<SharedLogicKotlinLazy>)injectOrNullQualifier:(id<SharedLogicKoin_coreQualifier> _Nullable)qualifier mode:(SharedLogicKotlinLazyThreadSafetyMode *)mode parameters:(SharedLogicKoin_coreParametersHolder *(^ _Nullable)(void))parameters __attribute__((swift_name("injectOrNull(qualifier:mode:parameters:)")));
+
+/**
+ * Load module & create eager instances
+ *
+ * @param allowOverride - allow to override definitions
+ * @param createEagerInstances - run instance creation for eager single definitions
+ */
+- (void)loadModulesModules:(NSArray<SharedLogicKoin_coreModule *> *)modules allowOverride:(BOOL)allowOverride createEagerInstances:(BOOL)createEagerInstances __attribute__((swift_name("loadModules(modules:allowOverride:createEagerInstances:)")));
+
+/**
+ * Save a property
+ * @param key
+ * @param value
+ */
+- (void)setPropertyKey:(NSString *)key value:(id)value __attribute__((swift_name("setProperty(key:value:)")));
+- (void)setupLoggerLogger:(SharedLogicKoin_coreLogger *)logger __attribute__((swift_name("setupLogger(logger:)")));
+- (void)unloadModulesModules:(NSArray<SharedLogicKoin_coreModule *> *)modules __attribute__((swift_name("unloadModules(modules:)")));
+@property (readonly) SharedLogicKoin_coreExtensionManager *extensionManager __attribute__((swift_name("extensionManager")));
+@property (readonly) SharedLogicKoin_coreInstanceRegistry *instanceRegistry __attribute__((swift_name("instanceRegistry")));
+@property (readonly) SharedLogicKoin_coreLogger *logger __attribute__((swift_name("logger")));
+@property (readonly) SharedLogicKoin_coreOptionRegistry *optionRegistry __attribute__((swift_name("optionRegistry")));
+@property (readonly) SharedLogicKoin_corePropertyRegistry *propertyRegistry __attribute__((swift_name("propertyRegistry")));
+@property (readonly) SharedLogicKoin_coreScopeRegistry *scopeRegistry __attribute__((swift_name("scopeRegistry")));
+@end
+
+__attribute__((swift_name("KotlinKDeclarationContainer")))
+@protocol SharedLogicKotlinKDeclarationContainer
+@required
+@end
+
+__attribute__((swift_name("KotlinKAnnotatedElement")))
+@protocol SharedLogicKotlinKAnnotatedElement
+@required
+@end
+
+
+/**
+ * @note annotations
+ *   kotlin.SinceKotlin(version="1.1")
+*/
+__attribute__((swift_name("KotlinKClassifier")))
+@protocol SharedLogicKotlinKClassifier
+@required
+@end
+
+__attribute__((swift_name("KotlinKClass")))
+@protocol SharedLogicKotlinKClass <SharedLogicKotlinKDeclarationContainer, SharedLogicKotlinKAnnotatedElement, SharedLogicKotlinKClassifier>
+@required
+
+/**
+ * @note annotations
+ *   kotlin.SinceKotlin(version="1.1")
+*/
+- (BOOL)isInstanceValue:(id _Nullable)value __attribute__((swift_name("isInstance(value:)")));
+@property (readonly) NSString * _Nullable qualifiedName __attribute__((swift_name("qualifiedName")));
+@property (readonly) NSString * _Nullable simpleName __attribute__((swift_name("simpleName")));
+@end
+
+__attribute__((swift_name("KotlinLazy")))
+@protocol SharedLogicKotlinLazy
+@required
+- (BOOL)isInitialized __attribute__((swift_name("isInitialized()")));
+@property (readonly) id _Nullable value __attribute__((swift_name("value")));
+@end
+
+__attribute__((swift_name("KotlinEnum")))
+@interface SharedLogicKotlinEnum<E> : SharedLogicBase <SharedLogicKotlinComparable>
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) SharedLogicKotlinEnumCompanion *companion __attribute__((swift_name("companion")));
+- (int32_t)compareToOther:(E)other __attribute__((swift_name("compareTo(other:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *name __attribute__((swift_name("name")));
+@property (readonly) int32_t ordinal __attribute__((swift_name("ordinal")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinLazyThreadSafetyMode")))
+@interface SharedLogicKotlinLazyThreadSafetyMode : SharedLogicKotlinEnum<SharedLogicKotlinLazyThreadSafetyMode *>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly) SharedLogicKotlinLazyThreadSafetyMode *synchronized __attribute__((swift_name("synchronized")));
+@property (class, readonly) SharedLogicKotlinLazyThreadSafetyMode *publication __attribute__((swift_name("publication")));
+@property (class, readonly) SharedLogicKotlinLazyThreadSafetyMode *none __attribute__((swift_name("none")));
++ (SharedLogicKotlinArray<SharedLogicKotlinLazyThreadSafetyMode *> *)values __attribute__((swift_name("values()")));
+@property (class, readonly) NSArray<SharedLogicKotlinLazyThreadSafetyMode *> *entries __attribute__((swift_name("entries")));
+@end
+
+
+/**
+ * Scope Callback
+ */
+__attribute__((swift_name("Koin_coreScopeCallback")))
+@protocol SharedLogicKoin_coreScopeCallback
+@required
+
+/**
+ * Called when scope is closing
+ * @param scope
+ */
+- (void)onScopeCloseScope:(SharedLogicKoin_coreScope *)scope __attribute__((swift_name("onScopeClose(scope:)")));
+@end
+
+
+/**
+ * Abstract Koin Logger
+ *
+ * @author Arnaud Giuliani
+ */
+__attribute__((swift_name("Koin_coreLogger")))
+@interface SharedLogicKoin_coreLogger : SharedLogicBase
+- (instancetype)initWithLevel:(SharedLogicKoin_coreLevel *)level __attribute__((swift_name("init(level:)"))) __attribute__((objc_designated_initializer));
+- (void)debugMsg:(NSString *)msg __attribute__((swift_name("debug(msg:)")));
+- (void)displayLevel:(SharedLogicKoin_coreLevel *)level msg:(NSString *)msg __attribute__((swift_name("display(level:msg:)")));
+- (void)errorMsg:(NSString *)msg __attribute__((swift_name("error(msg:)")));
+- (void)infoMsg:(NSString *)msg __attribute__((swift_name("info(msg:)")));
+- (BOOL)isAtLvl:(SharedLogicKoin_coreLevel *)lvl __attribute__((swift_name("isAt(lvl:)")));
+- (void)logLvl:(SharedLogicKoin_coreLevel *)lvl msg:(NSString *(^)(void))msg __attribute__((swift_name("log(lvl:msg:)")));
+- (void)logLvl:(SharedLogicKoin_coreLevel *)lvl msg_:(NSString *)msg __attribute__((swift_name("log(lvl:msg_:)")));
+- (void)warnMsg:(NSString *)msg __attribute__((swift_name("warn(msg:)")));
+@property SharedLogicKoin_coreLevel *level __attribute__((swift_name("level")));
+@end
+
+
+/**
+ * Koin bean definition
+ * main structure to make definition in Koin
+ *
+ * @author Arnaud Giuliani
+ */
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreBeanDefinition")))
+@interface SharedLogicKoin_coreBeanDefinition<T> : SharedLogicBase
+- (instancetype)initWithScopeQualifier:(id<SharedLogicKoin_coreQualifier>)scopeQualifier primaryType:(id<SharedLogicKotlinKClass>)primaryType qualifier:(id<SharedLogicKoin_coreQualifier> _Nullable)qualifier definition:(T _Nullable (^)(SharedLogicKoin_coreScope *, SharedLogicKoin_coreParametersHolder *))definition kind:(SharedLogicKoin_coreKind *)kind secondaryTypes:(NSArray<id<SharedLogicKotlinKClass>> *)secondaryTypes allowOverride:(SharedLogicBoolean * _Nullable)allowOverride __attribute__((swift_name("init(scopeQualifier:primaryType:qualifier:definition:kind:secondaryTypes:allowOverride:)"))) __attribute__((objc_designated_initializer));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (BOOL)hasTypeClazz:(id<SharedLogicKotlinKClass>)clazz __attribute__((swift_name("hasType(clazz:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (BOOL)isClazz:(id<SharedLogicKotlinKClass>)clazz qualifier:(id<SharedLogicKoin_coreQualifier> _Nullable)qualifier scopeDefinition:(id<SharedLogicKoin_coreQualifier>)scopeDefinition __attribute__((swift_name("is(clazz:qualifier:scopeDefinition:)")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property SharedLogicBoolean * _Nullable allowOverride __attribute__((swift_name("allowOverride")));
+@property SharedLogicKoin_coreCallbacks<T> *callbacks __attribute__((swift_name("callbacks")));
+@property (readonly) T _Nullable (^definition)(SharedLogicKoin_coreScope *, SharedLogicKoin_coreParametersHolder *) __attribute__((swift_name("definition")));
+@property (readonly) SharedLogicKoin_coreKind *kind __attribute__((swift_name("kind")));
+@property (readonly) id<SharedLogicKotlinKClass> primaryType __attribute__((swift_name("primaryType")));
+@property id<SharedLogicKoin_coreQualifier> _Nullable qualifier __attribute__((swift_name("qualifier")));
+@property (readonly) id<SharedLogicKoin_coreQualifier> scopeQualifier __attribute__((swift_name("scopeQualifier")));
+@property NSArray<id<SharedLogicKotlinKClass>> *secondaryTypes __attribute__((swift_name("secondaryTypes")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreInstanceFactoryCompanion")))
+@interface SharedLogicKoin_coreInstanceFactoryCompanion : SharedLogicBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedLogicKoin_coreInstanceFactoryCompanion *shared __attribute__((swift_name("shared")));
+@property (readonly) NSString *ERROR_SEPARATOR __attribute__((swift_name("ERROR_SEPARATOR")));
+@end
+
+
+/**
+ * Instance resolution Context
+ * Help support DefinitionContext & DefinitionParameters when resolving definition function
+ */
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreResolutionContext")))
+@interface SharedLogicKoin_coreResolutionContext : SharedLogicBase
+- (instancetype)initWithLogger:(SharedLogicKoin_coreLogger *)logger scope:(SharedLogicKoin_coreScope *)scope clazz:(id<SharedLogicKotlinKClass>)clazz qualifier:(id<SharedLogicKoin_coreQualifier> _Nullable)qualifier parameters:(SharedLogicKoin_coreParametersHolder * _Nullable)parameters __attribute__((swift_name("init(logger:scope:clazz:qualifier:parameters:)"))) __attribute__((objc_designated_initializer));
+- (SharedLogicKoin_coreResolutionContext *)doNewContextForScopeS:(SharedLogicKoin_coreScope *)s __attribute__((swift_name("doNewContextForScope(s:)")));
+@property (readonly) id<SharedLogicKotlinKClass> clazz __attribute__((swift_name("clazz")));
+@property (readonly) NSString *debugTag __attribute__((swift_name("debugTag")));
+@property (readonly) SharedLogicKoin_coreLogger *logger __attribute__((swift_name("logger")));
+@property (readonly) SharedLogicKoin_coreParametersHolder * _Nullable parameters __attribute__((swift_name("parameters")));
+@property (readonly) id<SharedLogicKoin_coreQualifier> _Nullable qualifier __attribute__((swift_name("qualifier")));
+@property (readonly) SharedLogicKoin_coreScope *scope __attribute__((swift_name("scope")));
+@property SharedLogicKoin_coreTypeQualifier * _Nullable scopeArchetype __attribute__((swift_name("scopeArchetype")));
+@end
+
 
 /**
  * Ktor type information.
@@ -6340,39 +6904,6 @@ __attribute__((swift_name("Kotlinx_serialization_coreSerializersModuleCollector"
  * [defaultSerializerProvider] can be stateful and lookup a serializer for the missing type dynamically.
  */
 - (void)polymorphicDefaultSerializerBaseClass:(id<SharedLogicKotlinKClass>)baseClass defaultSerializerProvider:(id<SharedLogicKotlinx_serialization_coreSerializationStrategy> _Nullable (^)(id))defaultSerializerProvider __attribute__((swift_name("polymorphicDefaultSerializer(baseClass:defaultSerializerProvider:)")));
-@end
-
-__attribute__((swift_name("KotlinKDeclarationContainer")))
-@protocol SharedLogicKotlinKDeclarationContainer
-@required
-@end
-
-__attribute__((swift_name("KotlinKAnnotatedElement")))
-@protocol SharedLogicKotlinKAnnotatedElement
-@required
-@end
-
-
-/**
- * @note annotations
- *   kotlin.SinceKotlin(version="1.1")
-*/
-__attribute__((swift_name("KotlinKClassifier")))
-@protocol SharedLogicKotlinKClassifier
-@required
-@end
-
-__attribute__((swift_name("KotlinKClass")))
-@protocol SharedLogicKotlinKClass <SharedLogicKotlinKDeclarationContainer, SharedLogicKotlinKAnnotatedElement, SharedLogicKotlinKClassifier>
-@required
-
-/**
- * @note annotations
- *   kotlin.SinceKotlin(version="1.1")
-*/
-- (BOOL)isInstanceValue:(id _Nullable)value __attribute__((swift_name("isInstance(value:)")));
-@property (readonly) NSString * _Nullable qualifiedName __attribute__((swift_name("qualifiedName")));
-@property (readonly) NSString * _Nullable simpleName __attribute__((swift_name("simpleName")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -6763,18 +7294,6 @@ __attribute__((swift_name("Ktor_httpHttpStatusCode.Companion")))
 @property (readonly) NSArray<SharedLogicKtor_httpHttpStatusCode *> *allStatusCodes __attribute__((swift_name("allStatusCodes")));
 @end
 
-__attribute__((swift_name("KotlinEnum")))
-@interface SharedLogicKotlinEnum<E> : SharedLogicBase <SharedLogicKotlinComparable>
-- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer));
-@property (class, readonly, getter=companion) SharedLogicKotlinEnumCompanion *companion __attribute__((swift_name("companion")));
-- (int32_t)compareToOther:(E)other __attribute__((swift_name("compareTo(other:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString *name __attribute__((swift_name("name")));
-@property (readonly) int32_t ordinal __attribute__((swift_name("ordinal")));
-@end
-
 
 /**
  * Day of week
@@ -6926,6 +7445,239 @@ __attribute__((swift_name("Ktor_httpHttpProtocolVersion.Companion")))
  * [Report a problem](https://ktor.io/feedback/?fqname=io.ktor.http.HttpProtocolVersion.Companion.SPDY_3)
  */
 @property (readonly) SharedLogicKtor_httpHttpProtocolVersion *SPDY_3 __attribute__((swift_name("SPDY_3")));
+@end
+
+
+/**
+ * ResolutionExtension offers a way to extend Koin capacity to resolve instance in external systems
+ * For example it allows to extend Koin to Ktor's internal DI, and make your Koin definition benefits from Ktor DI declared components
+ *
+ * Initially extracted from Scope, to help externalise resolution engine and extensions.
+ *
+ * Each extension has
+ * - a name, to help display resolution debugs
+ * - implement fun resolve(scope : Scope, instanceContext: ResolutionContext)
+ *
+ * @author Arnaud Giuliani
+ */
+__attribute__((swift_name("Koin_coreResolutionExtension")))
+@protocol SharedLogicKoin_coreResolutionExtension
+@required
+
+/**
+ * Resolve function for given scope and ResolutionContext
+ * @param scope
+ * @param instanceContext
+ */
+- (id _Nullable)resolveScope:(SharedLogicKoin_coreScope *)scope instanceContext:(SharedLogicKoin_coreResolutionContext *)instanceContext __attribute__((swift_name("resolve(scope:instanceContext:)")));
+
+/**
+ * Extension Name
+ */
+@property (readonly) NSString *name __attribute__((swift_name("name")));
+@end
+
+
+/**
+ * KoinComponent interface marker to bring Koin extensions features
+ *
+ * @author Arnaud Giuliani
+ */
+__attribute__((swift_name("Koin_coreKoinComponent")))
+@protocol SharedLogicKoin_coreKoinComponent
+@required
+
+/**
+ * Get the associated Koin instance
+ */
+- (SharedLogicKoin_coreKoin *)getKoin __attribute__((swift_name("getKoin()")));
+@end
+
+
+/**
+ * Koin Scope Component
+ *
+ * Help bring Scope API = Create/Destroy Scope for the given object
+ *
+ * @author Arnaud Giuliani
+ */
+__attribute__((swift_name("Koin_coreKoinScopeComponent")))
+@protocol SharedLogicKoin_coreKoinScopeComponent <SharedLogicKoin_coreKoinComponent>
+@required
+@property (readonly) SharedLogicKoin_coreScope *scope __attribute__((swift_name("scope")));
+@end
+
+
+/**
+ * Koin ExtensionManager - Allow to run new additional features, by adding "Extension"
+ *
+ * @see KoinExtension
+ *
+ * @author Arnaud Giuliani
+ */
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreExtensionManager")))
+@interface SharedLogicKoin_coreExtensionManager : SharedLogicBase
+- (instancetype)initWith_koin:(SharedLogicKoin_coreKoin *)_koin __attribute__((swift_name("init(_koin:)"))) __attribute__((objc_designated_initializer));
+- (void)close __attribute__((swift_name("close()")));
+- (id<SharedLogicKoin_coreKoinExtension>)getExtensionId:(NSString *)id __attribute__((swift_name("getExtension(id:)")));
+- (id<SharedLogicKoin_coreKoinExtension> _Nullable)getExtensionOrNullId:(NSString *)id __attribute__((swift_name("getExtensionOrNull(id:)")));
+- (void)registerExtensionId:(NSString *)id extension:(id<SharedLogicKoin_coreKoinExtension>)extension __attribute__((swift_name("registerExtension(id:extension:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreInstanceRegistry")))
+@interface SharedLogicKoin_coreInstanceRegistry : SharedLogicBase
+- (instancetype)initWith_koin:(SharedLogicKoin_coreKoin *)_koin __attribute__((swift_name("init(_koin:)"))) __attribute__((objc_designated_initializer));
+- (void)saveMappingAllowOverride:(BOOL)allowOverride mapping:(NSString *)mapping factory:(SharedLogicKoin_coreInstanceFactory<id> *)factory logWarning:(BOOL)logWarning __attribute__((swift_name("saveMapping(allowOverride:mapping:factory:logWarning:)")));
+- (int32_t)size __attribute__((swift_name("size()")));
+@property (readonly) SharedLogicKoin_coreKoin *_koin __attribute__((swift_name("_koin")));
+@property (readonly) NSDictionary<NSString *, SharedLogicKoin_coreInstanceFactory<id> *> *instances __attribute__((swift_name("instances")));
+@end
+
+
+/**
+ * Handle Default Flags values to let feature flag Koin parts
+ *
+ * @author Arnaud Giuliani
+ */
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreOptionRegistry")))
+@interface SharedLogicKoin_coreOptionRegistry : SharedLogicBase
+
+/**
+ * Handle Default Flags values to let feature flag Koin parts
+ *
+ * @author Arnaud Giuliani
+ */
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
+
+/**
+ * Handle Default Flags values to let feature flag Koin parts
+ *
+ * @author Arnaud Giuliani
+ */
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@end
+
+
+/**
+ * Property Registry
+ * Save/find all Koin properties
+ *
+ * @author Arnaud Giuliani
+ */
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_corePropertyRegistry")))
+@interface SharedLogicKoin_corePropertyRegistry : SharedLogicBase
+- (instancetype)initWith_koin:(SharedLogicKoin_coreKoin *)_koin __attribute__((swift_name("init(_koin:)"))) __attribute__((objc_designated_initializer));
+- (void)close __attribute__((swift_name("close()")));
+
+/**
+ * Delete a property (key,value)
+ */
+- (void)deletePropertyKey:(NSString *)key __attribute__((swift_name("deleteProperty(key:)")));
+
+/**
+ * Get a property
+ * @param key
+ */
+- (id _Nullable)getPropertyKey:(NSString *)key __attribute__((swift_name("getProperty(key:)")));
+
+/**
+ * saveProperty all properties to registry
+ * @param properties
+ */
+- (void)savePropertiesProperties:(NSDictionary<NSString *, id> *)properties __attribute__((swift_name("saveProperties(properties:)")));
+@end
+
+
+/**
+ * Scope Registry
+ * create/find scopes for Koin
+ *
+ * @author Arnaud Giuliani
+ */
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreScopeRegistry")))
+@interface SharedLogicKoin_coreScopeRegistry : SharedLogicBase
+- (instancetype)initWith_koin:(SharedLogicKoin_coreKoin *)_koin __attribute__((swift_name("init(_koin:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) SharedLogicKoin_coreScopeRegistryCompanion *companion __attribute__((swift_name("companion")));
+- (void)loadScopesModules:(NSSet<SharedLogicKoin_coreModule *> *)modules __attribute__((swift_name("loadScopes(modules:)")));
+@property (readonly) SharedLogicKoin_coreScope *rootScope __attribute__((swift_name("rootScope")));
+@property (readonly) NSSet<id<SharedLogicKoin_coreQualifier>> *scopeDefinitions __attribute__((swift_name("scopeDefinitions")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinEnumCompanion")))
+@interface SharedLogicKotlinEnumCompanion : SharedLogicBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedLogicKotlinEnumCompanion *shared __attribute__((swift_name("shared")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreLevel")))
+@interface SharedLogicKoin_coreLevel : SharedLogicKotlinEnum<SharedLogicKoin_coreLevel *>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly) SharedLogicKoin_coreLevel *debug __attribute__((swift_name("debug")));
+@property (class, readonly) SharedLogicKoin_coreLevel *info __attribute__((swift_name("info")));
+@property (class, readonly) SharedLogicKoin_coreLevel *warning __attribute__((swift_name("warning")));
+@property (class, readonly) SharedLogicKoin_coreLevel *error __attribute__((swift_name("error")));
+@property (class, readonly) SharedLogicKoin_coreLevel *none __attribute__((swift_name("none")));
++ (SharedLogicKotlinArray<SharedLogicKoin_coreLevel *> *)values __attribute__((swift_name("values()")));
+@property (class, readonly) NSArray<SharedLogicKoin_coreLevel *> *entries __attribute__((swift_name("entries")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreKind")))
+@interface SharedLogicKoin_coreKind : SharedLogicKotlinEnum<SharedLogicKoin_coreKind *>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly) SharedLogicKoin_coreKind *singleton __attribute__((swift_name("singleton")));
+@property (class, readonly) SharedLogicKoin_coreKind *factory __attribute__((swift_name("factory")));
+@property (class, readonly) SharedLogicKoin_coreKind *scoped __attribute__((swift_name("scoped")));
++ (SharedLogicKotlinArray<SharedLogicKoin_coreKind *> *)values __attribute__((swift_name("values()")));
+@property (class, readonly) NSArray<SharedLogicKoin_coreKind *> *entries __attribute__((swift_name("entries")));
+@end
+
+
+/**
+ * Definition callbacks - Functions to call on definition lifecycle
+ *
+ * @author Arnaud Giuliani
+ */
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreCallbacks")))
+@interface SharedLogicKoin_coreCallbacks<T> : SharedLogicBase
+- (instancetype)initWithOnClose:(void (^ _Nullable)(T _Nullable))onClose __attribute__((swift_name("init(onClose:)"))) __attribute__((objc_designated_initializer));
+- (SharedLogicKoin_coreCallbacks<T> *)doCopyOnClose:(void (^ _Nullable)(T _Nullable))onClose __attribute__((swift_name("doCopy(onClose:)")));
+
+/**
+ * Definition callbacks - Functions to call on definition lifecycle
+ *
+ * @author Arnaud Giuliani
+ */
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+
+/**
+ * Definition callbacks - Functions to call on definition lifecycle
+ *
+ * @author Arnaud Giuliani
+ */
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+
+/**
+ * Definition callbacks - Functions to call on definition lifecycle
+ *
+ * @author Arnaud Giuliani
+ */
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) void (^ _Nullable onClose)(T _Nullable) __attribute__((swift_name("onClose")));
 @end
 
 __attribute__((swift_name("KotlinKType")))
@@ -7440,15 +8192,6 @@ __attribute__((swift_name("Kotlinx_coroutines_coreSelectInstance")))
 @end
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("KotlinEnumCompanion")))
-@interface SharedLogicKotlinEnumCompanion : SharedLogicBase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) SharedLogicKotlinEnumCompanion *shared __attribute__((swift_name("shared")));
-@end
-
-__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Ktor_utilsWeekDay.Companion")))
 @interface SharedLogicKtor_utilsWeekDayCompanion : SharedLogicBase
 + (instancetype)alloc __attribute__((unavailable));
@@ -7492,6 +8235,36 @@ __attribute__((swift_name("Ktor_utilsMonth.Companion")))
  * [Report a problem](https://ktor.io/feedback/?fqname=io.ktor.util.date.Month.Companion.from)
  */
 - (SharedLogicKtor_utilsMonth *)fromValue:(NSString *)value __attribute__((swift_name("from(value:)")));
+@end
+
+
+/**
+ * Koin Extension - Allow to extend Koin features with additional extensions
+ *
+ * @author Arnaud Giuliani
+ */
+__attribute__((swift_name("Koin_coreKoinExtension")))
+@protocol SharedLogicKoin_coreKoinExtension
+@required
+
+/**
+ * Called when closing Koin
+ */
+- (void)onClose __attribute__((swift_name("onClose()")));
+
+/**
+ * Register from Koin instance
+ */
+- (void)onRegisterKoin:(SharedLogicKoin_coreKoin *)koin __attribute__((swift_name("onRegister(koin:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Koin_coreScopeRegistry.Companion")))
+@interface SharedLogicKoin_coreScopeRegistryCompanion : SharedLogicBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) SharedLogicKoin_coreScopeRegistryCompanion *shared __attribute__((swift_name("shared")));
 @end
 
 
