@@ -5,7 +5,7 @@
     <key>CFBundleExecutable</key>
     <string>SharedLogic</string>
     <key>CFBundleIdentifier</key>
-    <string>com.bk.quoteskmp.SharedLogic</string>
+    <string>com.SharedLogic</string>
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
     <key>CFBundleName</key>

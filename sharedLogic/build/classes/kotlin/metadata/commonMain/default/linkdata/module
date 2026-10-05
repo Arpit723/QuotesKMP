@@ -1,2 +1,2 @@
 
-<sharedLogic_commonMain>:com.bk.quoteskmp
+<sharedLogic_commonMain>:com.bk.quoteskmp:com.demo.quotes.data.remote:com.demo.quotes.domain
