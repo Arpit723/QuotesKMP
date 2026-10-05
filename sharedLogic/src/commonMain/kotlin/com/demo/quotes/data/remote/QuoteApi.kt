@@ -20,6 +20,7 @@ class QuoteApi(
 
 fun createHttpClient(engine: HttpClientEngine): HttpClient =
     HttpClient(engine) {
+        expectSuccess = true
         install(ContentNegotiation) {
             json(
                 Json {
