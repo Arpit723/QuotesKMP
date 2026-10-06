@@ -60,6 +60,7 @@ kotlin {
         androidMain.dependencies {
             implementation(libs.ktor.client.okhttp)
             implementation(libs.sqldelight.android.driver)
+            implementation(libs.koin.android)
         }
         iosMain.dependencies {
             implementation(libs.ktor.client.darwin)
@@ -70,6 +71,10 @@ kotlin {
             implementation(libs.kotlinx.coroutines.test)
             implementation(libs.ktor.client.mock)
             implementation(libs.turbine)
+        }
+        val androidHostTest by existing
+        androidHostTest.dependencies {
+            implementation(libs.sqldelight.sqlite.driver)
         }
     }
 }
