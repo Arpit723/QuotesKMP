@@ -68,6 +68,7 @@ iosApp/shared.xcframework/
 
 # ===== VS Code / Kilo Code / AI tools =====
 .vscode/
-.kilocode/
+.kilocode/*
+!.kilocode/rules/
 .claude/settings.local.json
 *.log
