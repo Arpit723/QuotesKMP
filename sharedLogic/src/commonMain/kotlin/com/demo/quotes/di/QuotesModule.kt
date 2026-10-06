@@ -15,7 +15,7 @@ val quotesModule = module {
     single { createHttpClient(createHttpClientEngine()) }
     single { QuoteApi(get()) }
     single<QuoteRepository> { QuoteRepositoryImpl(get()) }
-    factory { HomeViewModel(get()) }
+    single { HomeViewModel(get()) }
 }
 
 fun initKoin() {
