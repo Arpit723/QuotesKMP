@@ -1,8 +1,0 @@
-framework module "SharedLogic" {
-    umbrella header "SharedLogic.h"
-
-    export *
-    module * { export * }
-
-    use Foundation
-}

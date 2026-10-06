@@ -1,4 +1,0 @@
-com.bk.quoteskmp.sharedLogic-androidMain-0 /Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/generated/updated_navigation_xml/androidMain/res
-com.bk.quoteskmp.sharedLogic-packageAndroidMainResources-1 /Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/intermediates/incremental/androidMain/packageAndroidMainResources/merged.dir
-com.bk.quoteskmp.sharedLogic-packageAndroidMainResources-2 /Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/intermediates/incremental/androidMain/packageAndroidMainResources/stripped.dir
-com.bk.quoteskmp.sharedLogic-packageAndroidMainResources-3 /Users/arpitparekh/Documents/AndroidStudioProjects/QuotesKMP/sharedLogic/build/intermediates/packaged_res/androidMain/packageAndroidMainResources/res

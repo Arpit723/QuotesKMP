@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bk.quoteskmp.SharedLogicAndroidHostTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-05T12:31:28.581Z" hostname="Arpits-Mac-mini.local" time="0.01">
-  <properties/>
-  <testcase name="example" classname="com.bk.quoteskmp.SharedLogicAndroidHostTest" time="0.008"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
