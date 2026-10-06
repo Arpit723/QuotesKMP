@@ -72,3 +72,4 @@ iosApp/shared.xcframework/
 !.kilocode/rules/
 .claude/settings.local.json
 *.log
+.kilo/
