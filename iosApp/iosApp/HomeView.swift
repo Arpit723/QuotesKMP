@@ -6,8 +6,27 @@ struct HomeView: View {
     @StateObject private var observable = HomeObservable()
 
     var body: some View {
+        HomeScreenContent(
+            uiState: observable.state,
+            onNewQuote: observable.loadNewQuote
+        )
+        .task {
+            observable.startObserving()
+        }
+        .onDisappear {
+            observable.stopObserving()
+        }
+    }
+}
+
+struct HomeScreenContent: View {
+
+    let uiState: HomeUiState
+    let onNewQuote: () -> Void
+
+    var body: some View {
         Group {
-            switch onEnum(of: observable.state) {
+            switch onEnum(of: uiState) {
             case .loading:
                 ProgressView()
             case .success(let success):
@@ -17,12 +36,6 @@ struct HomeView: View {
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .task {
-            observable.startObserving()
-        }
-        .onDisappear {
-            observable.stopObserving()
-        }
     }
 
     private func successView(quote: Quote) -> some View {
@@ -43,7 +56,7 @@ struct HomeView: View {
             )
 
             Button("New Quote") {
-                observable.loadNewQuote()
+                onNewQuote()
             }
             .buttonStyle(.borderedProminent)
         }
@@ -56,10 +69,27 @@ struct HomeView: View {
                 .font(.body)
                 .multilineTextAlignment(.center)
             Button("Retry") {
-                observable.loadNewQuote()
+                onNewQuote()
             }
             .buttonStyle(.borderedProminent)
         }
         .padding(24)
     }
+}
+
+#Preview {
+    HomeScreenContent(uiState: HomeUiStateLoading.shared, onNewQuote: {})
+}
+
+#Preview {
+    HomeScreenContent(
+        uiState: HomeUiStateSuccess(
+            quote: Quote(id: 1, text: "Stay hungry, stay foolish.", author: "Steve Jobs")
+        ),
+        onNewQuote: {}
+    )
+}
+
+#Preview {
+    HomeScreenContent(uiState: HomeUiStateError(message: "Failed to load quote"), onNewQuote: {})
 }
