@@ -5,6 +5,15 @@ plugins {
     alias(libs.plugins.androidMultiplatformLibrary)
     alias(libs.plugins.kotlinSerialization)
     alias(libs.plugins.skie)
+    alias(libs.plugins.sqldelight)
+}
+
+sqldelight {
+    databases {
+        register("QuoteDatabase") {
+            packageName.set("com.demo.quotes.db")
+        }
+    }
 }
 
 kotlin {
@@ -15,6 +24,7 @@ kotlin {
         iosTarget.binaries.framework {
             baseName = "SharedLogic"
             isStatic = true
+            linkerOpts("-lsqlite3")
         }
     }
     
@@ -44,12 +54,16 @@ kotlin {
             implementation(libs.ktor.serialization.kotlinxJson)
             implementation(libs.koin.core)
             implementation(libs.androidx.lifecycle.viewmodel)
+            implementation(libs.sqldelight.runtime)
+            implementation(libs.sqldelight.coroutines)
         }
         androidMain.dependencies {
             implementation(libs.ktor.client.okhttp)
+            implementation(libs.sqldelight.android.driver)
         }
         iosMain.dependencies {
             implementation(libs.ktor.client.darwin)
+            implementation(libs.sqldelight.native.driver)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)

@@ -122,4 +122,4 @@ Rules:
 - Rethrowing `CancellationException` is required, or coroutine cancellation silently breaks.
 - Generated `build/` and `.gradle/` folders must never be committed (see `.gitignore`).
 - SQLDelight `.sq` files must sit in a folder path matching the database package name.
-- If the iOS build shows a sqlite3 linker error, add `linkerOpts("-lsqlite3")` to the iOS framework binaries.
+-  If the iOS build shows a sqlite3 linker error: the shared framework is static, so link it in the Xcode target too. Add "-lsqlite3" to OTHER_LDFLAGS in iosApp/Configuration/Config.xcconfig (keep the linkerOpts in Gradle as well). See DECISIONS.md.

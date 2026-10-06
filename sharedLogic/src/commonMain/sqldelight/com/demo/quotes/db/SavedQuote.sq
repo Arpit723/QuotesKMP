@@ -1,0 +1,21 @@
+CREATE TABLE SavedQuote (
+    id INTEGER PRIMARY KEY NOT NULL,
+    text TEXT NOT NULL,
+    author TEXT NOT NULL,
+    savedAt INTEGER NOT NULL
+);
+
+selectAll:
+SELECT * FROM SavedQuote ORDER BY savedAt DESC;
+
+selectById:
+SELECT * FROM SavedQuote WHERE id = ?;
+
+selectRandom:
+SELECT * FROM SavedQuote ORDER BY RANDOM() LIMIT 1;
+
+insertOrReplace:
+INSERT OR REPLACE INTO SavedQuote(id, text, author, savedAt) VALUES (?, ?, ?, ?);
+
+deleteById:
+DELETE FROM SavedQuote WHERE id = ?;
