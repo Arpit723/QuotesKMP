@@ -9,7 +9,7 @@ A small Kotlin Multiplatform demo app that shows random quotes from the internet
 - Shared Kotlin module: networking, database, domain, and presentation logic only
 - Purpose: demonstrate "share the logic, keep the UI native"
 
-Package: `com.demo.quotes`. Modules: `shared`, `androidApp`, `iosApp`.
+Package: `com.demo.quotes`. Modules: `sharedLogic`, `androidApp`, `iosApp`. The shared module builds an iOS framework named `SharedLogic` (Swift: `import SharedLogic`).
 
 ## 2. Current scope (do not exceed it)
 Home screen:
@@ -36,7 +36,7 @@ Out of scope: login, search, categories, sharing, analytics, settings, localizat
 Do NOT add any out-of-scope feature, library, or layer unless I explicitly ask.
 
 ## 3. Architecture
-Shared module layers (package by layer):
+sharedLogic module layers (package by layer):
 - `domain`: `Quote` model, `QuoteRepository` interface with:
   - `suspend fun fetchRandomQuote(): Quote`
   - `suspend fun randomSavedQuote(): Quote?`
@@ -50,7 +50,7 @@ Shared module layers (package by layer):
 - `di`: Koin module and `initKoin()`
 
 Rules:
-- All business logic lives in `shared`. Platform UI code only renders state and forwards user actions.
+- All business logic lives in `sharedLogic`. Platform UI code only renders state and forwards user actions.
 - `commonMain` must not import Android or iOS APIs. Use `expect/actual` or constructor injection for platform differences.
 - No Compose Multiplatform. Never share UI code.
 - ViewModels expose `StateFlow<UiState>` and plain functions. No callbacks, no `LiveData`.
@@ -96,8 +96,8 @@ Rules:
 - Never leave failing tests or a broken build at the end of a task.
 
 ## 9. Commands (run these yourself to verify)
-- Shared tests: `./gradlew :shared:allTests`
-- Shared build: `./gradlew :shared:build`
+- Shared tests: `./gradlew :sharedLogic:allTests`
+- Shared build: `./gradlew :sharedLogic:build`
 - Android build: `./gradlew :androidApp:assembleDebug`
 - iOS build: build `iosApp` for any available iOS simulator with `xcodebuild` (or Xcode)
 
@@ -118,7 +118,7 @@ Rules:
 
 ## 12. Known gotchas (add a line here whenever a mistake repeats)
 - Kotlin sealed types appear as plain Obj-C classes in Swift unless SKIE is active. If `onEnum(of:)` is missing, rebuild the shared framework.
-- The iOS app must run the Gradle task that embeds the shared framework before compiling Swift, or Xcode will not find the `shared` module.
+- The iOS app must run the Gradle task that embeds the shared framework before compiling Swift, or Xcode will not find the `SharedLogic` module.
 - Rethrowing `CancellationException` is required, or coroutine cancellation silently breaks.
 - Generated `build/` and `.gradle/` folders must never be committed (see `.gitignore`).
 - SQLDelight `.sq` files must sit in a folder path matching the database package name.
