@@ -19,6 +19,7 @@ ktor = "3.6.0"
 material3 = "1.12.0-alpha03"
 material3Android = "1.4.0"
 serialization = "1.11.0"
+skie = "0.10.15"
 turbine = "1.2.1"
 
 [libraries]
@@ -63,3 +64,4 @@ composeMultiplatform = { id = "org.jetbrains.compose", version.ref = "composeMul
 composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+skie = { id = "co.touchlab.skie", version.ref = "skie" }
