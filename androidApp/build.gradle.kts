@@ -17,6 +17,7 @@ dependencies {
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.lifecycle.runtimeCompose)
     implementation(libs.androidx.compose.material3)
+    implementation(libs.androidx.compose.material.iconsCore)
 
     implementation(libs.koin.android)
     implementation(libs.koin.androidx.compose)

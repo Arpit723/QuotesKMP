@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">QuotesKMP</string>
+    <string name="tab_home">Home</string>
+    <string name="tab_saved">Saved</string>
+    <string name="action_new_quote">New Quote</string>
+    <string name="action_retry">Retry</string>
+    <string name="cd_save_quote">Save quote</string>
+    <string name="cd_remove_from_saved">Remove from saved</string>
+    <string name="label_offline">Offline - showing a saved quote</string>
+    <string name="saved_empty">No saved quotes yet</string>
+    <string name="cd_delete_quote">Delete quote</string>
 </resources>

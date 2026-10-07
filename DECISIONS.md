@@ -93,4 +93,35 @@ app target, not in Gradle. Fix has two parts:
   error, and the next `observeSaved()` emission — or a `retry()` — legitimately
   overwrites the `Error` state.
 
+## 2026-10-07 — Android Saved screen, bottom navigation, icons dependency
+
+- **`material-icons-core` 1.7.8 added (androidApp only, via version catalog).**
+  `androidx.compose.material3:material3:1.4.0` no longer depends on the icons artifact
+  (verified via its POM and `dependencyInsight`), so the required Save/Delete/tab icons
+  needed the first-party artifact added explicitly. Latest version per Google Maven
+  metadata; the glyph set was verified from the published `-sources.jar`
+  (`Icons.Filled.Favorite`, `Icons.Outlined.FavoriteBorder`, `Icons.Filled.Delete`,
+  `Icons.Filled.Home`). `material-icons-extended` is NOT pulled in (checked with
+  `./gradlew :androidApp:dependencies`).
+- **Save toggle icons.** Unsaved = `Icons.Outlined.FavoriteBorder` (outline heart) +
+  contentDescription "Save quote"; saved = `Icons.Filled.Favorite` (solid heart) +
+  "Remove from saved" — clearly different shapes. Tab icons use
+  `contentDescription = null` because their `label` text is adjacent (avoids duplicate
+  TalkBack announcements).
+- **Offline label uses `colorScheme.tertiary`** (review decision), not the error color.
+- **Tab state** is `rememberSaveable { mutableStateOf(0) }` hoisted in `QuotesApp`;
+  the shell is a stateless `QuotesAppContent(selectedTab, onTabSelected, slots)`. No
+  navigation library, per scope.
+- **`koinViewModel()` + Koin `single` ViewModels do not survive Activity finish
+  (pre-existing, affects HomeViewModel too).** The instance resolved by
+  `koinViewModel()` is hosted in the Activity's `ViewModelStore`; finishing the
+  Activity clears the store and cancels `viewModelScope`, while Koin keeps returning
+  the same dead `single` on relaunch. Verified on the emulator (API 36): relaunch with
+  the process alive shows the ViewModel's last state, and the next action sets
+  `Loading` forever (coroutine launched on a cancelled scope); a fresh process works
+  fine. Not fixed in this task per instruction — options reported for approval
+  (Android-side `koinInject()` instead of `koinViewModel()`, or shared-side
+  `viewModel {}` registration, which changes iOS app-lifetime behavior).
+
+
 
