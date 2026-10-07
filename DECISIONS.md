@@ -16,3 +16,21 @@ app target, not in Gradle. Fix has two parts:
    link step (verified: the synced framework's Info.plist carries no linker flags and the
    project has no other linker-flag mechanism), so the Xcode target must link
    `libsqlite3` itself.
+
+## 2026-10-07 — QuoteRepository persistence functions
+
+- **`kotlin.time.Clock`, not `kotlinx.datetime.Clock`.** kotlinx-datetime 0.8.0 moved
+  `Clock`/`Instant` into the Kotlin stdlib; the kotlinx variants are deprecated. The
+  repository injects `clock: Clock = Clock.System` (constructor injection) so tests can
+  control `savedAt` via a mutable fake clock.
+- **Dispatcher injection.** `QuoteRepositoryImpl` takes
+  `dispatcher: CoroutineDispatcher = Dispatchers.Default`. It is passed to
+  `mapToList`/`mapToOneOrNull` and used in `withContext` for `randomSavedQuote`/`save`/
+  `delete`, so no DB work runs on the main thread. `Dispatchers.Default` (not `.IO`)
+  because `.IO` is not a commonMain-safe API.
+- **Saving an already-saved quote is "replace + refresh" (intentional).** `INSERT OR
+  REPLACE` overwrites the whole row, so `savedAt` is refreshed from the clock and the
+  quote moves to the top of the newest-first list. Re-saving is treated as "saved now",
+  which matches the Save-toggle UX of the home screen. Covered by
+  `savingTheSameIdTwiceReplacesTheRowAndRefreshesSavedAt`.
+

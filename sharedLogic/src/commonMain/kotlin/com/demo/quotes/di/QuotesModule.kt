@@ -17,7 +17,7 @@ import org.koin.mp.KoinPlatform
 val quotesModule = module {
     single { createHttpClient(createHttpClientEngine()) }
     single { QuoteApi(get()) }
-    single<QuoteRepository> { QuoteRepositoryImpl(get()) }
+    single<QuoteRepository> { QuoteRepositoryImpl(get(), get()) }
     single { QuoteDatabase(get<DatabaseDriverFactory>().createDriver()) }
     single { HomeViewModel(get()) }
 }

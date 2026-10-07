@@ -17,6 +17,8 @@ import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.test.StandardTestDispatcher
 import kotlinx.coroutines.test.advanceUntilIdle
 import kotlinx.coroutines.test.resetMain
@@ -35,6 +37,16 @@ class HomeViewModelTest {
             fetchCalls++
             return outcomes.removeFirst().getOrThrow()
         }
+
+        override suspend fun randomSavedQuote(): Quote? = null
+
+        override fun observeSaved(): Flow<List<Quote>> = flowOf(emptyList())
+
+        override fun observeIsSaved(id: Long): Flow<Boolean> = flowOf(false)
+
+        override suspend fun save(quote: Quote) = Unit
+
+        override suspend fun delete(id: Long) = Unit
     }
 
     private val quote = Quote(id = 1L, text = "text", author = "author")
