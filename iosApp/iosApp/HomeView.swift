@@ -84,7 +84,9 @@ struct HomeScreenContent: View {
 #Preview {
     HomeScreenContent(
         uiState: HomeUiStateSuccess(
-            quote: Quote(id: 1, text: "Stay hungry, stay foolish.", author: "Steve Jobs")
+            quote: Quote(id: 1, text: "Stay hungry, stay foolish.", author: "Steve Jobs"),
+            isSaved: false,
+            isOffline: false
         ),
         onNewQuote: {}
     )

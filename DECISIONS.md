@@ -34,3 +34,23 @@ app target, not in Gradle. Fix has two parts:
   which matches the Save-toggle UX of the home screen. Covered by
   `savingTheSameIdTwiceReplacesTheRowAndRefreshesSavedAt`.
 
+## 2026-10-07 — HomeViewModel save toggle and offline fallback
+
+- **`isSaved` is derived from the database, never set by `toggleSave`.** The first
+  `Success` reads `observeIsSaved(quote.id).first()` before emitting (no false→true
+  flicker), then a background job keeps observing; observed values are applied only
+  while the state is still `Success` for the same quote id. `toggleSave` only calls
+  `save`/`delete`; the state update arrives via the observation.
+- **First `isSaved` read failure = load failure.** If `observeIsSaved(...).first()`
+  throws (non-cancellation), the load takes the normal failure path: offline fallback
+  via `randomSavedQuote()`, else `Error`.
+- **Toggle failure → `Error` state** (per "ViewModels turn failures into Error state");
+  retry re-enters the normal load path.
+- **Later observation failures are logged and swallowed** (last known `isSaved` kept).
+  Unlike the first read, they are not user-initiated; the failure surfaces on the next
+  user action, which itself follows the Error-state rule.
+- **No default arguments on `HomeUiState.Success`.** Kotlin defaults are invisible to
+  Swift, so both `isSaved` and `isOffline` are explicit at every construction site
+  (`HomeViewModel`, `HomeViewModelTest`, the `HomeView.swift` preview).
+
+

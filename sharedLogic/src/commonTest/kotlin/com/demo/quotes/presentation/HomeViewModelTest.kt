@@ -15,9 +15,12 @@ import io.ktor.http.HttpStatusCode
 import io.ktor.http.headersOf
 import kotlin.test.Test
 import kotlin.test.assertEquals
+import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.test.StandardTestDispatcher
 import kotlinx.coroutines.test.advanceUntilIdle
@@ -32,24 +35,52 @@ class HomeViewModelTest {
     private class FakeQuoteRepository : QuoteRepository {
         val outcomes = ArrayDeque<Result<Quote>>()
         var fetchCalls = 0
+        var saveCalls = 0
+        var deleteCalls = 0
+
+        val savedIds = MutableStateFlow(emptySet<Long>())
+        var randomSaved: Quote? = null
+        var randomSavedError: Exception? = null
+        var isSavedReadError: Exception? = null
+        var saveError: Exception? = null
+
+        var fetchGate: CompletableDeferred<Unit>? = null
+        var isSavedGate: CompletableDeferred<Unit>? = null
 
         override suspend fun fetchRandomQuote(): Quote {
             fetchCalls++
+            fetchGate?.await()
             return outcomes.removeFirst().getOrThrow()
         }
 
-        override suspend fun randomSavedQuote(): Quote? = null
+        override suspend fun randomSavedQuote(): Quote? {
+            randomSavedError?.let { throw it }
+            return randomSaved?.also { savedIds.value = savedIds.value + it.id }
+        }
 
         override fun observeSaved(): Flow<List<Quote>> = flowOf(emptyList())
 
-        override fun observeIsSaved(id: Long): Flow<Boolean> = flowOf(false)
+        override fun observeIsSaved(id: Long): Flow<Boolean> = flow {
+            isSavedGate?.await()
+            isSavedReadError?.let { throw it }
+            savedIds.collect { saved -> emit(id in saved) }
+        }
 
-        override suspend fun save(quote: Quote) = Unit
+        override suspend fun save(quote: Quote) {
+            saveCalls++
+            saveError?.let { throw it }
+            savedIds.value = savedIds.value + quote.id
+        }
 
-        override suspend fun delete(id: Long) = Unit
+        override suspend fun delete(id: Long) {
+            deleteCalls++
+            savedIds.value = savedIds.value - id
+        }
     }
 
     private val quote = Quote(id = 1L, text = "text", author = "author")
+    private val savedQuote = Quote(id = 9L, text = "saved", author = "saved author")
+    private val onlineQuote = Quote(id = 2L, text = "online", author = "online author")
 
     @Test
     fun loadingThenSuccess() = runTest {
@@ -60,7 +91,7 @@ class HomeViewModelTest {
             viewModel.uiState.test {
                 assertEquals(HomeUiState.Loading, awaitItem())
                 this@runTest.advanceUntilIdle()
-                assertEquals(HomeUiState.Success(quote), awaitItem())
+                assertEquals(HomeUiState.Success(quote, isSaved = false, isOffline = false), awaitItem())
             }
         } finally {
             Dispatchers.resetMain()
@@ -98,7 +129,7 @@ class HomeViewModelTest {
                 assertEquals(HomeUiState.Loading, awaitItem())
                 viewModel.loadNewQuote()
                 this@runTest.advanceUntilIdle()
-                assertEquals(HomeUiState.Success(quote), awaitItem())
+                assertEquals(HomeUiState.Success(quote, isSaved = false, isOffline = false), awaitItem())
             }
         } finally {
             Dispatchers.resetMain()
@@ -168,7 +199,301 @@ class HomeViewModelTest {
                 viewModel.loadNewQuote()
                 assertEquals(HomeUiState.Loading, awaitItem())
                 this@runTest.advanceUntilIdle()
-                assertEquals(HomeUiState.Success(quote), awaitItem())
+                assertEquals(HomeUiState.Success(quote, isSaved = false, isOffline = false), awaitItem())
+            }
+        } finally {
+            Dispatchers.resetMain()
+        }
+    }
+
+    @Test
+    fun onlineQuoteAlreadySavedShowsIsSavedTrueOnFirstSuccess() = runTest {
+        Dispatchers.setMain(StandardTestDispatcher(testScheduler))
+        val repository = FakeQuoteRepository().apply {
+            outcomes += Result.success(quote)
+            savedIds.value = setOf(quote.id)
+        }
+        val viewModel = HomeViewModel(repository)
+        try {
+            viewModel.uiState.test {
+                assertEquals(HomeUiState.Loading, awaitItem())
+                this@runTest.advanceUntilIdle()
+                assertEquals(HomeUiState.Success(quote, isSaved = true, isOffline = false), awaitItem())
+            }
+        } finally {
+            Dispatchers.resetMain()
+        }
+    }
+
+    @Test
+    fun externalSaveUpdatesHomeState() = runTest {
+        Dispatchers.setMain(StandardTestDispatcher(testScheduler))
+        val repository = FakeQuoteRepository().apply { outcomes += Result.success(quote) }
+        val viewModel = HomeViewModel(repository)
+        try {
+            viewModel.uiState.test {
+                assertEquals(HomeUiState.Loading, awaitItem())
+                this@runTest.advanceUntilIdle()
+                assertEquals(HomeUiState.Success(quote, isSaved = false, isOffline = false), awaitItem())
+
+                repository.save(quote)
+                this@runTest.advanceUntilIdle()
+                assertEquals(HomeUiState.Success(quote, isSaved = true, isOffline = false), awaitItem())
+            }
+        } finally {
+            Dispatchers.resetMain()
+        }
+    }
+
+    @Test
+    fun toggleSaveDuringLoadingDoesNothing() = runTest {
+        Dispatchers.setMain(StandardTestDispatcher(testScheduler))
+        val repository = FakeQuoteRepository().apply {
+            outcomes += Result.success(quote)
+            fetchGate = CompletableDeferred()
+        }
+        val viewModel = HomeViewModel(repository)
+        try {
+            assertEquals(HomeUiState.Loading, viewModel.uiState.value)
+
+            viewModel.toggleSave()
+            this@runTest.advanceUntilIdle()
+
+            assertEquals(HomeUiState.Loading, viewModel.uiState.value)
+            assertEquals(0, repository.saveCalls)
+            assertEquals(0, repository.deleteCalls)
+
+            repository.fetchGate?.complete(Unit)
+            this@runTest.advanceUntilIdle()
+            assertEquals(
+                HomeUiState.Success(quote, isSaved = false, isOffline = false),
+                viewModel.uiState.value,
+            )
+        } finally {
+            Dispatchers.resetMain()
+        }
+    }
+
+    @Test
+    fun toggleSaveDuringErrorDoesNothing() = runTest {
+        Dispatchers.setMain(StandardTestDispatcher(testScheduler))
+        val repository = FakeQuoteRepository().apply {
+            outcomes += Result.failure(RuntimeException("raw internal failure"))
+        }
+        val viewModel = HomeViewModel(repository)
+        try {
+            viewModel.uiState.test {
+                assertEquals(HomeUiState.Loading, awaitItem())
+                this@runTest.advanceUntilIdle()
+                assertEquals(HomeUiState.Error("Something went wrong. Please try again."), awaitItem())
+            }
+
+            viewModel.toggleSave()
+            this@runTest.advanceUntilIdle()
+
+            assertEquals(HomeUiState.Error("Something went wrong. Please try again."), viewModel.uiState.value)
+            assertEquals(0, repository.saveCalls)
+            assertEquals(0, repository.deleteCalls)
+        } finally {
+            Dispatchers.resetMain()
+        }
+    }
+
+    @Test
+    fun secondLoadWhileIsSavedReadSuspendedMakesNoExtraFetch() = runTest {
+        Dispatchers.setMain(StandardTestDispatcher(testScheduler))
+        val repository = FakeQuoteRepository().apply {
+            outcomes += Result.success(quote)
+            isSavedGate = CompletableDeferred()
+        }
+        val viewModel = HomeViewModel(repository)
+        try {
+            viewModel.uiState.test {
+                assertEquals(HomeUiState.Loading, awaitItem())
+                this@runTest.advanceUntilIdle()
+
+                viewModel.loadNewQuote()
+                this@runTest.advanceUntilIdle()
+                assertEquals(1, repository.fetchCalls)
+
+                repository.isSavedGate?.complete(Unit)
+                this@runTest.advanceUntilIdle()
+                assertEquals(HomeUiState.Success(quote, isSaved = false, isOffline = false), awaitItem())
+            }
+        } finally {
+            Dispatchers.resetMain()
+        }
+    }
+
+    @Test
+    fun fetchFailureFallsBackToRandomSavedQuote() = runTest {
+        Dispatchers.setMain(StandardTestDispatcher(testScheduler))
+        val repository = FakeQuoteRepository().apply {
+            outcomes += Result.failure(IOException("connection refused"))
+            randomSaved = savedQuote
+        }
+        val viewModel = HomeViewModel(repository)
+        try {
+            viewModel.uiState.test {
+                assertEquals(HomeUiState.Loading, awaitItem())
+                this@runTest.advanceUntilIdle()
+                assertEquals(
+                    HomeUiState.Success(savedQuote, isSaved = true, isOffline = true),
+                    awaitItem(),
+                )
+            }
+        } finally {
+            Dispatchers.resetMain()
+        }
+    }
+
+    @Test
+    fun unsaveOfflineQuoteKeepsOfflineLabel() = runTest {
+        Dispatchers.setMain(StandardTestDispatcher(testScheduler))
+        val repository = FakeQuoteRepository().apply {
+            outcomes += Result.failure(IOException("connection refused"))
+            randomSaved = savedQuote
+        }
+        val viewModel = HomeViewModel(repository)
+        try {
+            viewModel.uiState.test {
+                assertEquals(HomeUiState.Loading, awaitItem())
+                this@runTest.advanceUntilIdle()
+                assertEquals(
+                    HomeUiState.Success(savedQuote, isSaved = true, isOffline = true),
+                    awaitItem(),
+                )
+
+                viewModel.toggleSave()
+                this@runTest.advanceUntilIdle()
+                assertEquals(
+                    HomeUiState.Success(savedQuote, isSaved = false, isOffline = true),
+                    awaitItem(),
+                )
+            }
+        } finally {
+            Dispatchers.resetMain()
+        }
+    }
+
+    @Test
+    fun retryFromOfflineReturnsToOnlineQuote() = runTest {
+        Dispatchers.setMain(StandardTestDispatcher(testScheduler))
+        val repository = FakeQuoteRepository().apply {
+            outcomes += Result.failure(IOException("connection refused"))
+            outcomes += Result.success(onlineQuote)
+            randomSaved = savedQuote
+        }
+        val viewModel = HomeViewModel(repository)
+        try {
+            viewModel.uiState.test {
+                assertEquals(HomeUiState.Loading, awaitItem())
+                this@runTest.advanceUntilIdle()
+                assertEquals(
+                    HomeUiState.Success(savedQuote, isSaved = true, isOffline = true),
+                    awaitItem(),
+                )
+
+                viewModel.loadNewQuote()
+                assertEquals(HomeUiState.Loading, awaitItem())
+                this@runTest.advanceUntilIdle()
+                assertEquals(
+                    HomeUiState.Success(onlineQuote, isSaved = false, isOffline = false),
+                    awaitItem(),
+                )
+            }
+        } finally {
+            Dispatchers.resetMain()
+        }
+    }
+
+    @Test
+    fun isSavedReadFailureFallsBackToOfflineQuote() = runTest {
+        Dispatchers.setMain(StandardTestDispatcher(testScheduler))
+        val repository = FakeQuoteRepository().apply {
+            outcomes += Result.success(quote)
+            isSavedReadError = RuntimeException("database read failed")
+            randomSaved = savedQuote
+        }
+        val viewModel = HomeViewModel(repository)
+        try {
+            viewModel.uiState.test {
+                assertEquals(HomeUiState.Loading, awaitItem())
+                this@runTest.advanceUntilIdle()
+                assertEquals(
+                    HomeUiState.Success(savedQuote, isSaved = true, isOffline = true),
+                    awaitItem(),
+                )
+            }
+        } finally {
+            Dispatchers.resetMain()
+        }
+    }
+
+    @Test
+    fun isSavedReadFailureWithNothingSavedShowsError() = runTest {
+        Dispatchers.setMain(StandardTestDispatcher(testScheduler))
+        val repository = FakeQuoteRepository().apply {
+            outcomes += Result.success(quote)
+            isSavedReadError = RuntimeException("database read failed")
+        }
+        val viewModel = HomeViewModel(repository)
+        try {
+            viewModel.uiState.test {
+                assertEquals(HomeUiState.Loading, awaitItem())
+                this@runTest.advanceUntilIdle()
+                assertEquals(
+                    HomeUiState.Error("Something went wrong. Please try again."),
+                    awaitItem(),
+                )
+            }
+        } finally {
+            Dispatchers.resetMain()
+        }
+    }
+
+    @Test
+    fun randomSavedQuoteFailureShowsError() = runTest {
+        Dispatchers.setMain(StandardTestDispatcher(testScheduler))
+        val repository = FakeQuoteRepository().apply {
+            outcomes += Result.failure(IOException("connection refused"))
+            randomSavedError = RuntimeException("database read failed")
+        }
+        val viewModel = HomeViewModel(repository)
+        try {
+            viewModel.uiState.test {
+                assertEquals(HomeUiState.Loading, awaitItem())
+                this@runTest.advanceUntilIdle()
+                assertEquals(
+                    HomeUiState.Error("Can't reach the server. Check your connection."),
+                    awaitItem(),
+                )
+            }
+        } finally {
+            Dispatchers.resetMain()
+        }
+    }
+
+    @Test
+    fun toggleFailureShowsError() = runTest {
+        Dispatchers.setMain(StandardTestDispatcher(testScheduler))
+        val repository = FakeQuoteRepository().apply {
+            outcomes += Result.success(quote)
+            saveError = RuntimeException("database write failed")
+        }
+        val viewModel = HomeViewModel(repository)
+        try {
+            viewModel.uiState.test {
+                assertEquals(HomeUiState.Loading, awaitItem())
+                this@runTest.advanceUntilIdle()
+                assertEquals(HomeUiState.Success(quote, isSaved = false, isOffline = false), awaitItem())
+
+                viewModel.toggleSave()
+                this@runTest.advanceUntilIdle()
+                assertEquals(
+                    HomeUiState.Error("Something went wrong. Please try again."),
+                    awaitItem(),
+                )
             }
         } finally {
             Dispatchers.resetMain()
