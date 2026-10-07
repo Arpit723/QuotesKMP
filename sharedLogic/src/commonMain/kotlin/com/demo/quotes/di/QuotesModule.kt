@@ -8,6 +8,7 @@ import com.demo.quotes.db.QuoteDatabase
 import com.demo.quotes.domain.QuoteRepository
 import com.demo.quotes.platform.DatabaseDriverFactory
 import com.demo.quotes.presentation.HomeViewModel
+import com.demo.quotes.presentation.SavedViewModel
 import io.ktor.client.HttpClient
 import org.koin.core.KoinApplication
 import org.koin.core.context.startKoin
@@ -20,6 +21,7 @@ val quotesModule = module {
     single<QuoteRepository> { QuoteRepositoryImpl(get(), get()) }
     single { QuoteDatabase(get<DatabaseDriverFactory>().createDriver()) }
     single { HomeViewModel(get()) }
+    single { SavedViewModel(get()) }
 }
 
 /**

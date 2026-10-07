@@ -32,52 +32,6 @@ import kotlinx.io.IOException
 @OptIn(ExperimentalCoroutinesApi::class)
 class HomeViewModelTest {
 
-    private class FakeQuoteRepository : QuoteRepository {
-        val outcomes = ArrayDeque<Result<Quote>>()
-        var fetchCalls = 0
-        var saveCalls = 0
-        var deleteCalls = 0
-
-        val savedIds = MutableStateFlow(emptySet<Long>())
-        var randomSaved: Quote? = null
-        var randomSavedError: Exception? = null
-        var isSavedReadError: Exception? = null
-        var saveError: Exception? = null
-
-        var fetchGate: CompletableDeferred<Unit>? = null
-        var isSavedGate: CompletableDeferred<Unit>? = null
-
-        override suspend fun fetchRandomQuote(): Quote {
-            fetchCalls++
-            fetchGate?.await()
-            return outcomes.removeFirst().getOrThrow()
-        }
-
-        override suspend fun randomSavedQuote(): Quote? {
-            randomSavedError?.let { throw it }
-            return randomSaved?.also { savedIds.value = savedIds.value + it.id }
-        }
-
-        override fun observeSaved(): Flow<List<Quote>> = flowOf(emptyList())
-
-        override fun observeIsSaved(id: Long): Flow<Boolean> = flow {
-            isSavedGate?.await()
-            isSavedReadError?.let { throw it }
-            savedIds.collect { saved -> emit(id in saved) }
-        }
-
-        override suspend fun save(quote: Quote) {
-            saveCalls++
-            saveError?.let { throw it }
-            savedIds.value = savedIds.value + quote.id
-        }
-
-        override suspend fun delete(id: Long) {
-            deleteCalls++
-            savedIds.value = savedIds.value - id
-        }
-    }
-
     private val quote = Quote(id = 1L, text = "text", author = "author")
     private val savedQuote = Quote(id = 9L, text = "saved", author = "saved author")
     private val onlineQuote = Quote(id = 2L, text = "online", author = "online author")

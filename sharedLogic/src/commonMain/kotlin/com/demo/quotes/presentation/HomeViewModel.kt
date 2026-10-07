@@ -4,8 +4,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.demo.quotes.domain.Quote
 import com.demo.quotes.domain.QuoteRepository
-import io.ktor.client.plugins.ClientRequestException
-import io.ktor.http.HttpStatusCode
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -13,7 +11,6 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
-import kotlinx.io.IOException
 
 class HomeViewModel(
     private val repository: QuoteRepository,
@@ -97,11 +94,4 @@ class HomeViewModel(
             }
         }
     }
-}
-
-private fun Exception.toUserMessage(): String = when {
-    this is ClientRequestException && response.status == HttpStatusCode.TooManyRequests ->
-        "Too many requests. Please wait a few seconds and try again."
-    this is IOException -> "Can't reach the server. Check your connection."
-    else -> "Something went wrong. Please try again."
 }

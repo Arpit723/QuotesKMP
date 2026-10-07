@@ -46,7 +46,7 @@ sharedLogic module layers (package by layer):
   - `suspend fun delete(id: Long)`
 - `data`: `remote` (Ktor `QuoteApi`, `QuoteDto`, mapper), `local` (SQLDelight database, table `SavedQuote` (id, text, author, savedAt)), `QuoteRepositoryImpl`
 - `platform`: expect/actual `DatabaseDriverFactory` (Android needs `Context`, iOS needs nothing)
-- `presentation`: `HomeUiState` (sealed: Loading, `Success(quote, isSaved, isOffline)`, Error), `HomeViewModel`, `SavedUiState` (sealed: Loading, `Empty`, `Content(quotes)`), `SavedViewModel`
+- `presentation`: `HomeUiState` (sealed: Loading, `Success(quote, isSaved, isOffline)`, Error), `HomeViewModel`, `SavedUiState` (sealed: Loading, `Empty`, `Content(quotes)`, `Error(message)`), `SavedViewModel`
 - `di`: Koin module and `initKoin()`
 
 Rules:

@@ -53,4 +53,44 @@ app target, not in Gradle. Fix has two parts:
   Swift, so both `isSaved` and `isOffline` are explicit at every construction site
   (`HomeViewModel`, `HomeViewModelTest`, the `HomeView.swift` preview).
 
+## 2026-10-07 — SavedViewModel: manual StateFlow, shared error messages
+
+- **Manual `MutableStateFlow` over `stateIn`/`SharingStarted`.** Per kotlinx.coroutines
+  docs, an upstream exception in a `stateIn`-shared flow "terminates the sharing
+  coroutine … handled by the scope" — under `viewModelScope` that crashes unless a
+  `catch` operator is prepended, and the read-only `StateFlow` it returns cannot be set
+  from `delete()` without merging in a side-channel. One `MutableStateFlow` owned by the
+  ViewModel (HomeViewModel precedent) avoids both problems.
+- **`delete` never edits the list.** `SavedViewModel.delete(id)` only calls
+  `repository.delete(id)`; every `Content`/`Empty` update arrives solely via a new
+  `observeSaved()` emission collected once in `init` (single source of truth, mirrors
+  the proven `isSaved` design in HomeViewModel). No optimistic state that can drift
+  from the DB; concurrent saves/deletes stay consistent; `Error` comes only from real
+  failures.
+- **`toUserMessage()` moved, not duplicated.** From a private extension at the bottom
+  of `HomeViewModel.kt` to `internal` in `presentation/UserMessages.kt` — shared
+  message policy across both ViewModels, no drift. HomeViewModel behaviour unchanged.
+- **Test fake extracted and extended additively.** `FakeQuoteRepository` moved from a
+  nested private class in `HomeViewModelTest.kt` to its own commonTest file
+  (`internal`, same package). Extensions: `savedQuotes: MutableStateFlow<List<Quote>>`
+  backing a stateful `observeSaved()` (kept in sync by `save` — newest-first prepend
+  replacing same id, matching `QuoteRepositoryImpl`'s INSERT OR REPLACE — and `delete`),
+  plus `deleteError`/`observeSavedError`/`deleteGate` knobs (gate awaits before any
+  mutation, fetchGate pattern). No existing knob's behaviour changed; no Home test
+  observes `savedQuotes`.
+- **ViewModels collect eagerly in `init`, not `SharingStarted.WhileSubscribed`.** The
+  `observeSaved()` collector starts the moment the ViewModel is created, so the state
+  moves off `Loading` even before a UI subscribes — the Saved screen never idles on a
+  stale initial value while nobody is collecting.
+- **`retry()` restarts collection from scratch.** `observe()` cancels the previous
+  collector job, sets `Loading`, and launches a fresh `observeSaved()` collection
+  (shared by `init` and `retry`). Two quick retries leave exactly one active collector:
+  the second `cancel()` stops the first restart's job before it can duplicate
+  emissions — covered by `retryTwiceQuicklyLeavesExactlyOneActiveCollector` via the
+  fake's `activeObservers` counter (added for that test only).
+- **An error from `delete` (or the collector) replaces the list until `retry()` or the
+  next emission.** On failure the last `Content` is dropped rather than kept beside the
+  error, and the next `observeSaved()` emission — or a `retry()` — legitimately
+  overwrites the `Error` state.
+
 
