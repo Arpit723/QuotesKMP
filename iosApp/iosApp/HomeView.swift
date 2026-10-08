@@ -8,7 +8,8 @@ struct HomeView: View {
     var body: some View {
         HomeScreenContent(
             uiState: observable.state,
-            onNewQuote: observable.loadNewQuote
+            onNewQuote: observable.loadNewQuote,
+            onToggleSave: observable.toggleSave
         )
         .task {
             observable.startObserving()
@@ -23,6 +24,7 @@ struct HomeScreenContent: View {
 
     let uiState: HomeUiState
     let onNewQuote: () -> Void
+    let onToggleSave: () -> Void
 
     var body: some View {
         Group {
@@ -30,7 +32,7 @@ struct HomeScreenContent: View {
             case .loading:
                 ProgressView()
             case .success(let success):
-                successView(quote: success.quote)
+                successView(quote: success.quote, isSaved: success.isSaved, isOffline: success.isOffline)
             case .error(let failure):
                 errorView(message: failure.message)
             }
@@ -38,7 +40,7 @@ struct HomeScreenContent: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 
-    private func successView(quote: Quote) -> some View {
+    private func successView(quote: Quote, isSaved: Bool, isOffline: Bool) -> some View {
         VStack(spacing: 20) {
             VStack(alignment: .leading, spacing: 12) {
                 Text(quote.text)
@@ -55,10 +57,25 @@ struct HomeScreenContent: View {
                     .fill(Color(.secondarySystemBackground))
             )
 
-            Button("New Quote") {
-                onNewQuote()
+            if isOffline {
+                Text("Offline - showing a saved quote")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
             }
-            .buttonStyle(.borderedProminent)
+
+            HStack(spacing: 16) {
+                Button(action: onToggleSave) {
+                    Image(systemName: isSaved ? "heart.fill" : "heart")
+                        .font(.title2)
+                        .foregroundColor(isSaved ? .red : .primary)
+                }
+                .accessibilityLabel(isSaved ? "Remove from saved" : "Save quote")
+
+                Button("New Quote") {
+                    onNewQuote()
+                }
+                .buttonStyle(.borderedProminent)
+            }
         }
         .padding(24)
     }
@@ -78,7 +95,7 @@ struct HomeScreenContent: View {
 }
 
 #Preview {
-    HomeScreenContent(uiState: HomeUiStateLoading.shared, onNewQuote: {})
+    HomeScreenContent(uiState: HomeUiStateLoading.shared, onNewQuote: {}, onToggleSave: {})
 }
 
 #Preview {
@@ -88,10 +105,47 @@ struct HomeScreenContent: View {
             isSaved: false,
             isOffline: false
         ),
-        onNewQuote: {}
+        onNewQuote: {},
+        onToggleSave: {}
     )
 }
 
 #Preview {
-    HomeScreenContent(uiState: HomeUiStateError(message: "Failed to load quote"), onNewQuote: {})
+    HomeScreenContent(
+        uiState: HomeUiStateSuccess(
+            quote: Quote(id: 1, text: "Stay hungry, stay foolish.", author: "Steve Jobs"),
+            isSaved: true,
+            isOffline: false
+        ),
+        onNewQuote: {},
+        onToggleSave: {}
+    )
+}
+
+#Preview {
+    HomeScreenContent(
+        uiState: HomeUiStateSuccess(
+            quote: Quote(id: 1, text: "Stay hungry, stay foolish.", author: "Steve Jobs"),
+            isSaved: false,
+            isOffline: true
+        ),
+        onNewQuote: {},
+        onToggleSave: {}
+    )
+}
+
+#Preview {
+    HomeScreenContent(
+        uiState: HomeUiStateSuccess(
+            quote: Quote(id: 1, text: "Stay hungry, stay foolish.", author: "Steve Jobs"),
+            isSaved: true,
+            isOffline: true
+        ),
+        onNewQuote: {},
+        onToggleSave: {}
+    )
+}
+
+#Preview {
+    HomeScreenContent(uiState: HomeUiStateError(message: "Failed to load quote"), onNewQuote: {}, onToggleSave: {})
 }

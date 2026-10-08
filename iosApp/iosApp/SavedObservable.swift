@@ -2,15 +2,15 @@ import SwiftUI
 import SharedLogic
 
 @MainActor
-final class HomeObservable: ObservableObject {
+final class SavedObservable: ObservableObject {
 
-    @Published var state: HomeUiState
+    @Published var state: SavedUiState
 
-    private let viewModel: HomeViewModel
+    private let viewModel: SavedViewModel
     private var observingTask: Task<Void, Never>?
 
     init() {
-        let viewModel = KoinHelper.shared.homeViewModel()
+        let viewModel = KoinHelper.shared.savedViewModel()
         self.viewModel = viewModel
         self.state = viewModel.uiState.value
     }
@@ -29,11 +29,11 @@ final class HomeObservable: ObservableObject {
         observingTask = nil
     }
 
-    func loadNewQuote() {
-        viewModel.loadNewQuote()
+    func delete(id: Int64) {
+        viewModel.delete(id: id)
     }
 
-    func toggleSave() {
-        viewModel.toggleSave()
+    func retry() {
+        viewModel.retry()
     }
 }
