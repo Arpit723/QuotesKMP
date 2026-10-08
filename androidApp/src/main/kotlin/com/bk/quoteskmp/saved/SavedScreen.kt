@@ -32,11 +32,11 @@ import com.bk.quoteskmp.R
 import com.demo.quotes.domain.Quote
 import com.demo.quotes.presentation.SavedUiState
 import com.demo.quotes.presentation.SavedViewModel
-import org.koin.androidx.compose.koinViewModel
+import org.koin.compose.koinInject
 
 @Composable
 fun SavedScreen(
-    viewModel: SavedViewModel = koinViewModel(),
+    viewModel: SavedViewModel = koinInject(),
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
 

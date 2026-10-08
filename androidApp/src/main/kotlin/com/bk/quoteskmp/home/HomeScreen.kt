@@ -31,11 +31,11 @@ import com.bk.quoteskmp.R
 import com.demo.quotes.domain.Quote
 import com.demo.quotes.presentation.HomeUiState
 import com.demo.quotes.presentation.HomeViewModel
-import org.koin.androidx.compose.koinViewModel
+import org.koin.compose.koinInject
 
 @Composable
 fun HomeScreen(
-    viewModel: HomeViewModel = koinViewModel(),
+    viewModel: HomeViewModel = koinInject(),
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
 

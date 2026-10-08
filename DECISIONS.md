@@ -119,9 +119,22 @@ app target, not in Gradle. Fix has two parts:
   the same dead `single` on relaunch. Verified on the emulator (API 36): relaunch with
   the process alive shows the ViewModel's last state, and the next action sets
   `Loading` forever (coroutine launched on a cancelled scope); a fresh process works
-  fine. Not fixed in this task per instruction — options reported for approval
-  (Android-side `koinInject()` instead of `koinViewModel()`, or shared-side
-  `viewModel {}` registration, which changes iOS app-lifetime behavior).
+  fine.
+- **Fix applied: `koinInject()` instead of `koinViewModel()`.**
+  `HomeViewModel` and `SavedViewModel` are Koin singletons shared with iOS. On Android
+  they are obtained with `koinInject()` so they never enter an Activity's
+  `ViewModelStore`. With `koinViewModel()`, the store cancelled `viewModelScope` when
+  the Activity finished while the singleton survived, so after Back-out and relaunch in
+  the same process New Quote stayed on `Loading` forever.
+- **Trade-off.** The ViewModels live for the whole process. `viewModelScope` is never
+  cancelled by an Activity/Composable lifecycle; coroutines launched there survive
+  screen transitions. This is acceptable for two screens but does not scale to
+  multi-screen navigation.
+- **Future direction.** A per-screen `viewModel {}` registration (non-singleton, scoped
+  to the screen's lifecycle) is the better long-term pattern for a multi-screen app
+  such as the Brahma Kumaris port. That requires moving state ownership off the
+  singleton so the shared logic survives config changes for Android and process-lifetime
+  for iOS without the cancelled-scope problem.
 
 
 
